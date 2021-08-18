@@ -1,0 +1,16 @@
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/Calculator
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/Calculator.deps.json
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/Calculator.runtimeconfig.json
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/Calculator.runtimeconfig.dev.json
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/Calculator.dll
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/ref/Calculator.dll
+/home/casey/revature/casey_repo/week_1/Calculator/bin/Debug/net5.0/Calculator.pdb
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.csproj.AssemblyReference.cache
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.GeneratedMSBuildEditorConfig.editorconfig
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.AssemblyInfoInputs.cache
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.AssemblyInfo.cs
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.csproj.CoreCompileInputs.cache
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.dll
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/ref/Calculator.dll
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.pdb
+/home/casey/revature/casey_repo/week_1/Calculator/obj/Debug/net5.0/Calculator.genruntimeconfig.cache
