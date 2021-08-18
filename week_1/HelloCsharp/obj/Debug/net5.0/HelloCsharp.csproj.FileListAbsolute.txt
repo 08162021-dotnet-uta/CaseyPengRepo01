@@ -1,0 +1,16 @@
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/HelloCsharp
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/HelloCsharp.deps.json
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/HelloCsharp.runtimeconfig.json
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/HelloCsharp.runtimeconfig.dev.json
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/HelloCsharp.dll
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/ref/HelloCsharp.dll
+/home/casey/revature/casey_repo/week_1/HelloCsharp/bin/Debug/net5.0/HelloCsharp.pdb
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.csproj.AssemblyReference.cache
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.AssemblyInfoInputs.cache
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.AssemblyInfo.cs
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.csproj.CoreCompileInputs.cache
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.dll
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/ref/HelloCsharp.dll
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.pdb
+/home/casey/revature/casey_repo/week_1/HelloCsharp/obj/Debug/net5.0/HelloCsharp.genruntimeconfig.cache
