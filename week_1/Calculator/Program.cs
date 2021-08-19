@@ -12,11 +12,11 @@ namespace Calculator
           int result1 = Add(input1,input2);
           int result2 = Sbutract(input1,input2);
 
-           print();
+           Print(result1,result2);
          
         }
 
-        static void Add()
+        static int Add(int input1,int input2)
         {
           //input stuff
           //casting taking the whole thing and covert it to a new type 
@@ -24,11 +24,11 @@ namespace Calculator
       
           //comput stuff
 
-          var compute = (int)input1 + (int)input2;
+          return (int)input1 + (int)input2;
           
           
         }
-        static void Sbutract()
+        static int Sbutract(int input1, int input2)
         {
           //input stuff
           //casting taking the whole thing and covert it to a new type 
@@ -36,12 +36,16 @@ namespace Calculator
       
           //comput stuff
 
-          var compute = (int)input1 - (int)input2;
+          return (int)input1 - (int)input2;
           //output
         
         }
        static void Print(params int[] results){
-        Console.ReadLine(result1,result2)
+       for (int i = 0;i <results.Length;i++)
+       {
+         Console.WriteLine(results[i]);
+       }
         
     }
+}
 }
