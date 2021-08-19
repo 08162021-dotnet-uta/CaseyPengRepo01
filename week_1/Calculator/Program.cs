@@ -9,10 +9,10 @@ namespace Calculator
           var input1 = int.Parse(Console.ReadLine());
           var input2 = int.Parse(Console.ReadLine());
 
-          var result1 = Add(input1,input2);
-          var result2 = Sbutract(input1,input2);
+          int result1 = Add(input1,input2);
+          int result2 = Sbutract(input1,input2);
 
-            Console.WriteLine(result1,result2);
+           print();
          
         }
 
@@ -20,7 +20,7 @@ namespace Calculator
         {
           //input stuff
           //casting taking the whole thing and covert it to a new type 
-
+//run does't have a type untill run time,complie time, there is no type for va, keyword "var" may only appear....
       
           //comput stuff
 
@@ -40,7 +40,8 @@ namespace Calculator
           //output
         
         }
-        
+       static void Print(params int[] results){
+        Console.ReadLine(result1,result2)
         
     }
 }

@@ -1,0 +1,18 @@
+namespace OutKeyword
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int testA;
+            Input(out testA);
+            Console.WriteLine(testA);
+        }
+
+        static bool Input(out int x)
+        {
+            x = 5;
+            return false;
+        }
+    }
+}
