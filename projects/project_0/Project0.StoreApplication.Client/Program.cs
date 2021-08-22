@@ -1,41 +1,51 @@
 ﻿using System;
-using System.Collections.Generic;//allows you to use List<T> Class,it is in a namespace system.collections.generic
-using Project0.StoreApplication.Domain.Models;
 using Project0.StoreApplication.Storage.Repositories;
+using Serilog;
 
 namespace Project0.StoreApplication.Client
 {
   class Program
   {
+
     static void Main(string[] args)
     {
-      var p = new Program();
-      PrintAllStoreLocations();
-      System.Console.WriteLine(p.SelectAStore());
+      //Log created by serilog 
+      Log.Logger = new LoggerConfiguration().CreateLogger();
+      var program = new Program();
+
+      program.CaptureOutput();
     }
-    static void PrintAllStoreLocations()
+
+    private void OutputStores()
     {
-      var StoreRepository = new StoreRepository();
-      foreach (var store in StoreRepository.Stores)
+
+      Log.Information("mehtod outpoutstores");
+
+      var storeRepository = new StoreRepository();
+
+      foreach (var store in storeRepository.Stores)
       {
-        System.Console.WriteLine(store);
+        Console.WriteLine(store);
       }
-
-      // storeLocations.Add(new Store());
-      // storeLocations.Add(new Store())
     }
-    Store SelectAStore()
+
+    private int CaptureInput()
     {
-      var sr = new StoreRepository().Stores;
+      Log.Information("in method captureinput");
+      OutputStores();
 
-      Console.WriteLine("Select a Store: ");
+      Console.WriteLine("pick a store base on Store Id:");
 
-      var option = int.Parse(Console.ReadLine());
+      int selected = int.Parse(Console.ReadLine()) - 1;
 
-      var store = sr[option - 1];
-
-      return store;
+      return selected;
     }
 
+    private void CaptureOutput()
+    {
+      var storeRepository = new StoreRepository();
+
+      Console.WriteLine("you have selected: " + " " + storeRepository.Stores[CaptureInput()]);
+    }
   }
 }
