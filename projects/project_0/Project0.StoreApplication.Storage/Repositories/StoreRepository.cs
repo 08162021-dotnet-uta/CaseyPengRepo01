@@ -1,5 +1,7 @@
-using System.Collections.Generic;
+using System.Collections.Generic;//allows you to use List<T> Class,it is in a namespace system.collections.generic
+using Project0.StoreApplication.Domain.Abstracts;
 using Project0.StoreApplication.Domain.Models;
+using Project0.StoreApplication.Storage.Adapters;
 
 namespace Project0.StoreApplication.Storage.Repositories
 {
@@ -9,12 +11,15 @@ namespace Project0.StoreApplication.Storage.Repositories
 
     public StoreRepository()
     {
+      // var fileAdapter = new FileAdapter();
+      // var fileAdapter = new FileAdapter();
       Stores = new List<Store>()
       {
-        new Store(){Name ="001", Location = "1st Ave, Uptobia"},
-        new Store(){Name="002", Location = "X Street, Wonderland"},
-        new Store(){Name="003", Location = "Y Boulevard, Arcadia"}
+        new FlowerStore(),
+        new GiftStore()
       };
+      // Stores = fileAdapter.ReadFromFile();
     }
+
   }
 }

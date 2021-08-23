@@ -1,0 +1,54 @@
+{
+  "Project0.StoreApplication.Domain.dll": {
+    "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Models/Store.cs": {
+      "Project0.StoreApplication.Domain.Models.Store": {
+        "System.String Project0.StoreApplication.Domain.Models.Store::get_Name()": {
+          "Lines": {
+            "5": 3
+          },
+          "Branches": []
+        },
+        "System.String Project0.StoreApplication.Domain.Models.Store::get_Location()": {
+          "Lines": {
+            "7": 3
+          },
+          "Branches": []
+        },
+        "System.String Project0.StoreApplication.Domain.Models.Store::ToString()": {
+          "Lines": {
+            "9": 0,
+            "10": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "Project0.StoreApplication.Storage.dll": {
+    "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Repositories/StoreRepository.cs": {
+      "Project0.StoreApplication.Storage.Repositories.StoreRepository": {
+        "System.Collections.Generic.List`1<Project0.StoreApplication.Domain.Models.Store> Project0.StoreApplication.Storage.Repositories.StoreRepository::get_Stores()": {
+          "Lines": {
+            "8": 2
+          },
+          "Branches": []
+        },
+        "System.Void Project0.StoreApplication.Storage.Repositories.StoreRepository::.ctor()": {
+          "Lines": {
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
