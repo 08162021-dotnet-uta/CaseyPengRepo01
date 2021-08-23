@@ -1,6 +1,7 @@
 ﻿using System;
 using Project0.StoreApplication.Storage.Repositories;
 using Serilog;
+using System.Collections.Generic;
 
 namespace Project0.StoreApplication.Client
 {
@@ -44,8 +45,28 @@ namespace Project0.StoreApplication.Client
     private void CaptureOutput()
     {
       var storeRepository = new StoreRepository();
+      var products = new ProductRepository().Products;
+      int selectedIdx = CaptureInput();
+      foreach (var product in products)
+      {
+        int productStoreId = Int32.Parse(product.StoreId);
+        if (selectedIdx == productStoreId)
+        {
+          Console.WriteLine(product);
+        }
+        else
+        {
+          Console.WriteLine("No Product for the store");
+        }
 
-      Console.WriteLine("you have selected: " + " " + storeRepository.Stores[CaptureInput()]);
+
+
+      }
+      Console.WriteLine("you have selected: " + " " + storeRepository.Stores[selectedIdx]);
+
+
+
     }
   }
+
 }
