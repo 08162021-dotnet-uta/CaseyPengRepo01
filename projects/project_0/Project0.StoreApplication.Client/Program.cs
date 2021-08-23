@@ -7,11 +7,16 @@ namespace Project0.StoreApplication.Client
 {
   class Program
   {
-
+//8/23
+// what happen  if you remove static from the below code 
+//private static readonly StoreRepository _storeRepository= new StoreRepository();
+//control StoreRepository.Instance to be instance
+private readonly StoreRepository _storeRepository = StoreRepository.Instance;
+//8/23end
     static void Main(string[] args)
     {
       //Log created by serilog 
-      Log.Logger = new LoggerConfiguration().CreateLogger();
+      Log.Logger = new LoggerConfiguration().WriteTo.Console().CreateLogger();
       var program = new Program();
 
       program.CaptureOutput();
@@ -22,9 +27,9 @@ namespace Project0.StoreApplication.Client
 
       Log.Information("mehtod outpoutstores");
 
-      var storeRepository = new StoreRepository();
-
-      foreach (var store in storeRepository.Stores)
+      // var storeRepository = _storeRepository;
+  
+      foreach (var store in _storeRepository.Stores)
       {
         Console.WriteLine(store);
       }
@@ -44,7 +49,7 @@ namespace Project0.StoreApplication.Client
 
     private void CaptureOutput()
     {
-      var storeRepository = new StoreRepository();
+      var storeRepository = _storeRepository;
       var products = new ProductRepository().Products;
       int selectedIdx = CaptureInput();
       foreach (var product in products)
@@ -62,7 +67,7 @@ namespace Project0.StoreApplication.Client
 
 
       }
-      Console.WriteLine("you have selected: " + " " + storeRepository.Stores[selectedIdx]);
+      Console.WriteLine("you have selected: " + " " +_storeRepository.Stores[selectedIdx]);
 
 
 
