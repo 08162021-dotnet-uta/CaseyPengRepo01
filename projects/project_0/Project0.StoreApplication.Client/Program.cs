@@ -53,18 +53,25 @@ private readonly StoreRepository _storeRepository = StoreRepository.Instance;
       // var products = new ProductRepository().Products;
       int selectedIdx = CaptureInput();
       
+   var selectedStore = _storeRepository.Stores[selectedIdx];
+      Console.WriteLine("you have selected: " + " " + selectedStore.StoreName + "\n " + "Here are the products: ");
 
-      Console.WriteLine("you have selected: " + " " +_storeRepository.Stores[selectedIdx] + "\n " + "Here are the products: ");
-
-      foreach(var product in _storeRepository.Stores[selectedIdx].Products )
+      foreach(var product in selectedStore.Products )
       {
           Console.WriteLine(product);
       }
-    
 
+Console.WriteLine("pick a product yout want to purchase base on Id:");
 
+      int selectedProductIdx = int.Parse(Console.ReadLine()) - 1;
+      var selectedProduct = selectedStore.Products[selectedProductIdx];
+      
+        Console.WriteLine("you selected "+ selectedProduct.ProductName  + ", and your total is $" + selectedProduct.ProductPrice );
+     
 
     }
+
+   
   }
 
 }
