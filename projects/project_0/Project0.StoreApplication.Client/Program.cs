@@ -50,24 +50,17 @@ private readonly StoreRepository _storeRepository = StoreRepository.Instance;
     private void CaptureOutput()
     {
       var storeRepository = _storeRepository;
-      var products = new ProductRepository().Products;
+      // var products = new ProductRepository().Products;
       int selectedIdx = CaptureInput();
-      foreach (var product in products)
+      
+
+      Console.WriteLine("you have selected: " + " " +_storeRepository.Stores[selectedIdx] + "\n " + "Here are the products: ");
+
+      foreach(var product in _storeRepository.Stores[selectedIdx].Products )
       {
-        int productStoreId = Int32.Parse(product.StoreId);
-        if (selectedIdx == productStoreId)
-        {
           Console.WriteLine(product);
-        }
-        else
-        {
-          Console.WriteLine("No Product for the store");
-        }
-
-
-
       }
-      Console.WriteLine("you have selected: " + " " +_storeRepository.Stores[selectedIdx]);
+    
 
 
 

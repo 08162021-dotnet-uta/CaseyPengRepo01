@@ -10,13 +10,14 @@ namespace Project0.StoreApplication.Domain.Abstracts
   {
     public string StoreId { get; set; }
     public string Location { get; set; }
+        public string StoreName { get; set; }
 
     public List<Product> Products { get; set; }
 
 
     public override string ToString()
     {
-      return "StoreId: " + StoreId + " Location: " + Location;
+      return  "StoreId:" + StoreId+ " StoreName: " + StoreName  + " Location: " + Location;
     }
 
 
