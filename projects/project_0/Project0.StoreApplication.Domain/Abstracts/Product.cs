@@ -8,10 +8,12 @@ namespace Project0.StoreApplication.Domain.Abstracts
     public string ProductName { get; set; }
 
     public string ProductPrice { get; set; }
+
+    public string ProductId { get; set; }
     
     public override string ToString()
     {
-      return " ProductName: " + ProductName + " ProductPrice: $" + ProductPrice ;
+      return  "ProductId:" + ProductId + "  ProductName:" + ProductName + "  ProductPrice: $" + ProductPrice ;
     }
   }
 }

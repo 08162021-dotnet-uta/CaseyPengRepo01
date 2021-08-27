@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Project0.StoreApplication.Domain.Models;
 using Project0.StoreApplication.Storage.Repositories;
-
+//referenc to all the available stres
 namespace Project0.StoreApplication.Client.Singletons
 {
   /// <summary>

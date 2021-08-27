@@ -13,6 +13,7 @@ namespace Project0.StoreApplication.Client.Singletons
     private static readonly CustomerRepository _customerRepository = new CustomerRepository();
 
     public List<Customer> Customers { get; private set; }
+    
     public static CustomerSingleton Instance
     {
       get

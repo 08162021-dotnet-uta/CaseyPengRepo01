@@ -15,3 +15,14 @@
 
 //   }
 // }
+// using System.Collections.Generic;
+// namespace Project0.StoreApplication.Domain.Models
+// {
+//   public class Daisy
+//   {
+//     public string ProductName{get;set;}
+//     public string ProductPrice{get;set;}
+//     public List<Product> Products{get;set;}
+//     public Daisy();
+//   }
+// }

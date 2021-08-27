@@ -9,21 +9,21 @@
 //     public List<Product> Products { get; set; }
 //     public ProductRepository()
 //     {
-// //       Products = new List<Product>()
-// //       {
-// // new Product {
-// // ProductId = "1",
-// // ProductPrice ="2",
-// // ProductName ="Daisy",
-// // StoreId = "1"
-// // },
-// // new Product {
-// // ProductId = "1",
-// // ProductPrice ="3",
-// // ProductName ="Lily",
-// // StoreId ="1"
-// // },
-// //       };
+//       Products = new List<Product>()
+//       {
+// new Product {
+// ProductId = "1",
+// ProductPrice ="2",
+// ProductName ="Daisy",
+// StoreId = "1"
+// },
+// new Product {
+// ProductId = "1",
+// ProductPrice ="3",
+// ProductName ="Lily",
+// StoreId ="1"
+// },
+//       };
 //     }
 //   }
 

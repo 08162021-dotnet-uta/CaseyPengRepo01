@@ -160,7 +160,7 @@ namespace Project0.StoreApplication.Client
     {
       Log.Information("method: Run()");
 
-      Console.WriteLine("Are you a customer or a store ? 1 for custormer, 2 for store");
+      Console.WriteLine("Are you a customer or a store ? 1 for custormer,  for store");
        int input = int.Parse(Console.ReadLine());
        if(input == 2){
 
