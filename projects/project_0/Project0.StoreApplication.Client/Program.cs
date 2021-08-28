@@ -23,104 +23,6 @@ using Serilog;
 // //8/23end
 // private static readonly CustomerSingleton _customerSingleton = CustomerSingleton.Instance;
 // //TRY SINGLETON
-// // var store = _storeSingleton.Stores[CaptureInput<Customer>(_storeSingleton.Stores)];
-// private const string _logFilePath = @"/home/casey/exercise/CaseyPengRepo01/data/logs.txt";
-
-// /// <summary>
-// /// Define the Main Method 
-// /// </summary>
-// /// <param name="args"></param>
-//    private static void Main(string[] args)
-//     {
-//       //Log created by serilog 
-//          Log.Logger = new LoggerConfiguration().WriteTo.File(_logFilePath).CreateLogger();
-//       // var program = new Program();
-// Run();
-//       // program.CaptureOutput();
-//     }
-//     private static void Run()
-//     {
-//    Log.Information("method: Run()")
-
-//    if(_customerSingleton.Customer.Count ==0)
-//    {
-
-//    }
-//       CaptureOutput();
-//     }
-
-//     // private void OutputStores()
-//     // {
-
-//     //   Log.Information("mehtod outpoutstores");
-
-//     //   // var storeRepository = _storeRepository;
-
-//     //   foreach (var store in _storeRepository.Stores)
-//     //   {
-//     //     Console.WriteLine(store);
-//     //   }
-//     // }
-//   private void Output<T>(List<T> data) where T : class
-//     {//or output < {typeof(T}>)}
-
-//       Log.Information($"mehtod: Output<{typeof(T)}>()"); //string interpolation
-//       Output<Store>(_storeSingleton.Stores);
-//        Output<Store>(_storeSingleton.Stores);
-
-
-//       // var storeRepository = _storeRepository;
-
-//       foreach (var item in data)
-//       {
-//         Console.WriteLine(item);
-//       }
-//     }
-//     private static int CaptureInput()
-//     {
-//       Log.Information("in method captureinput");
-//       Output<Store>(_storeRepository.Stores);
-
-//       Console.WriteLine("pick a store base on Store Id:");
-
-//       int selected = int.Parse(Console.ReadLine()) - 1;
-
-//       return selected;
-//     }
-//     //    private static int CaptureInput()
-//     // {
-//     //   Log.Information("in method captureinput");
-//     //   OutputStores();
-
-//     //   Console.WriteLine("pick a store base on Store Id:");
-
-//     //   int selected = int.Parse(Console.ReadLine()) - 1;
-
-//     //   return selected;
-//     // }
-
-
-//     private static void CaptureOutput()
-//     {
-//       var storeRepository = _storeRepository;
-//       // var products = new ProductRepository().Products;
-//       int selectedIdx = CaptureInput();
-
-//    var selectedStore = _storeRepository.Stores[selectedIdx];
-//       Console.WriteLine("you have selected: " + " " + selectedStore.StoreName + "\n " + "Here are the products: ");
-
-//       foreach(var product in selectedStore.Products )
-//       {
-//           Console.WriteLine(product);
-//       }
-
-// Console.WriteLine("pick a product yout want to purchase base on Id:");
-
-//       int selectedProductIdx = int.Parse(Console.ReadLine()) - 1;
-//       var selectedProduct = selectedStore.Products[selectedProductIdx];
-
-//         Console.WriteLine("you selected "+ selectedProduct.ProductName  + ", and your total is $" + selectedProduct.ProductPrice );
-
 
 //     }
 
@@ -160,9 +62,9 @@ namespace Project0.StoreApplication.Client
     {
       Log.Information("method: Run()");
 
-      Console.WriteLine("Are you a customer or a store ? 1 for custormer,  for store");
-      int input = int.Parse(Console.ReadLine());
-      if (input == 2)
+      Console.WriteLine("Are you a customer or a store ? C for custormer,  S for store");
+      string selected = Console.ReadLine().ToLower();
+      if (selected == "s")
       {
 
         if (_customerSingleton.Customers.Count != 0)
@@ -170,16 +72,10 @@ namespace Project0.StoreApplication.Client
           _customerSingleton.Add(new Customer());
         }
 
-        // var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
-        // var store = _storeSingleton.Stores[Capture<Store>(_storeSingleton.Stores)];
-        // // stores
-        //Output<Store>(_storeSingleton.Stores);
-        // products
-        //Output<Product>(_productSingleton.Products);
-
-        // Console.WriteLine(customer);
+        var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
+        Console.Write(customer);
       }
-      else if (input == 1)
+      else if (selected == "c")
       {
         if (_storeSingleton.Stores.Count == 0)
         {
@@ -187,12 +83,12 @@ namespace Project0.StoreApplication.Client
         }
         var stores = _storeSingleton.Stores;
         Console.WriteLine("Here are the stores: ");
-        foreach (var store in stores)
-        {
-          Console.WriteLine(store);
-        }
+        Output<Store>(stores);
+
         Console.WriteLine("Select a store by name :");
         var selectedStore = Console.ReadLine().ToLower();
+
+
 
         foreach (var store in stores)
         {
@@ -210,7 +106,7 @@ namespace Project0.StoreApplication.Client
           }
           else
           {
-            Console.WriteLine("Invalid input, Try agian ");
+            Console.WriteLine("fail");
           }
         }
 
@@ -225,7 +121,14 @@ namespace Project0.StoreApplication.Client
 
 
     /// 
+    //
+    /// <summary>
+    /// use constraints to restrict client code to specify certain types while instantiating generic types
+    /// 
     /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// 
+    //Class Contraint: ONLY REFERENCE Type can be passed as argument
     private static void Output<T>(List<T> data) where T : class
     {
       Log.Information($"method: Output<{typeof(T)}>()");
@@ -237,6 +140,7 @@ namespace Project0.StoreApplication.Client
         Console.WriteLine($" {item}");
       }
     }
+
 
 
     /// <summary>
@@ -261,16 +165,17 @@ namespace Project0.StoreApplication.Client
     //   }
 
     // }
-    //  private static int Capture<T>(List<T> data) where T : class
-    //     {
-    //       Log.Information("method: Capture()");
+    private static int Capture<T>(List<T> data) where T : class
+    {
+      Log.Information("method: Capture()");
 
-    //       Output<T>(data);
-    //       Console.Write("make selection: ");
 
-    //       int selected = int.Parse(Console.ReadLine()) - 1;
+      Console.Write("make selection: ");
 
-    //       return selected;
-    //     }
+      int selected = int.Parse(Console.ReadLine()) - 1;
+
+      return selected;
+    }
   }
+
 }
