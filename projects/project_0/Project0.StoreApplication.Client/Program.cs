@@ -62,53 +62,104 @@ namespace Project0.StoreApplication.Client
     {
       Log.Information("method: Run()");
 
-      Console.WriteLine("Are you a customer or a store ? C for custormer,  S for store");
-      string selected = Console.ReadLine().ToLower();
-      if (selected == "s")
+      Console.WriteLine("Are you a customer or a store ? 1 for custormer,  2 for store");
+      int selected = Selected();
+      if (selected == 2)
       {
 
-        if (_customerSingleton.Customers.Count != 0)
-        {
-          _customerSingleton.Add(new Customer());
-        }
-
-        var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
-        Console.Write(customer);
-      }
-      else if (selected == "c")
-      {
         if (_storeSingleton.Stores.Count == 0)
         {
           _storeSingleton.Add(new Store());
         }
+
         var stores = _storeSingleton.Stores;
-        Console.WriteLine("Here are the stores: ");
-        Output<Store>(stores);
-
-        Console.WriteLine("Select a store by name :");
-        var selectedStore = Console.ReadLine().ToLower();
-
-
-
+        Console.WriteLine("Here are the orders: ");
         foreach (var store in stores)
         {
-          string storeName = store.Name.ToLower();
-          if (storeName.Contains(selectedStore))
+          foreach (var order in store.Orders)
           {
-            Console.WriteLine($"Store selected :{store}");
-            foreach (var product in store.Products)
-            {
-              Console.WriteLine(product);
-            }
-            Console.WriteLine("Select a product to pucrchase");
-            var selectedProduct = Console.ReadLine().ToLower();
-            //Output<Product>(store.Products);
-          }
-          else
-          {
-            Console.WriteLine("fail");
+            Console.WriteLine(order);
           }
         }
+
+      }
+      else if (selected == 1)
+      {
+
+        if (_customerSingleton.Customers.Count == 0)
+        {
+          _customerSingleton.Add(new Customer());
+        }
+        // Console.WriteLine("Enter your name to retrive info :");
+        // string customerName = Console.ReadLine().ToLower();
+        // List<Customer> currentCustomer = new List<Customer>();
+        // foreach (var customer in _customerSingleton.Customers)
+        // {
+        //   if (customer.Name.ToLower() == customerName)
+        //   {
+        //     currentCustomer.Add(customer);
+        //     Console.WriteLine($"{customer} + {currentCustomer[0]}");
+        //   }
+        // }
+
+
+        // var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
+        Console.WriteLine("Do you want to see 1)List of Stores ? 2)Order History");
+        int choice = Selected();
+        if (choice == 1)
+        {
+          if (_storeSingleton.Stores.Count == 0)
+          {
+            Console.WriteLine("No Store");
+          }
+          var stores = _storeSingleton.Stores;
+          Console.WriteLine("Here are the stores: ");
+          Output<Store>(stores);
+          var selectedStore = stores[Capture<Store>(stores)];
+          Console.WriteLine($"You selected store: {selectedStore.Name} with products :");
+          Output<Product>(selectedStore.Products);
+          Console.WriteLine("Selected a poduct to purchase: ");
+          var selectedProduct = selectedStore.Products[Selected() - 1];
+          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out?  Y/N");
+          if (Console.ReadLine().ToLower() == "y")
+          {
+            // customer.AddOrder(selectedProduct);
+            // Console.WriteLine(customer.Orders[0]);
+          }
+;
+          // foreach (var store in stores)
+          // {
+          //   string storeName = store.Name.ToLower();
+          //   // if (storeName.Contains(selectedStore))
+          //   // {
+          //   //   Console.WriteLine($"Store selected :{store}");
+          //   //   foreach (var product in store.Products)
+          //   //   {
+          //   //     Console.WriteLine(product);
+          //   //   }
+          //   //   Console.WriteLine("Select a product to pucrchase");
+          //   //   var selectedProduct = Console.ReadLine().ToLower();
+          //   //   //Output<Product>(store.Products);
+          //   // }
+          //   // else
+          //   // {
+          //   //   Console.WriteLine("fail");
+          //   // }
+          // }
+
+        }
+        else if (choice == 2)
+        {
+          var customers = _customerSingleton.Customers;
+          foreach (var customer in customers)
+          {
+            foreach (var order in customer.Orders)
+            {
+              Console.WriteLine(order);
+            }
+          }
+        }
+
 
         //--don't delet the below line, keep for reference
         // var store = _storeSingleton.Stores[0];
@@ -133,11 +184,12 @@ namespace Project0.StoreApplication.Client
     {
       Log.Information($"method: Output<{typeof(T)}>()");
 
-      // var index = 0;
+      int idex = 1;
 
       foreach (var item in data)
       {
-        Console.WriteLine($" {item}");
+        Console.WriteLine($" {idex}   {item}");
+        idex++;
       }
     }
 
@@ -147,26 +199,17 @@ namespace Project0.StoreApplication.Client
     /// 
     /// </summary>
     /// <returns></returns>
-    // private static bool Capture<T>(List<T> data) where T : class
-    // {
-    //   Log.Information("method: Capture()");
 
-    //   Output<T>(data);
-    //   Console.Write("make selection: ");
 
-    //   // int selected = int.Parse(Console.ReadLine()) - 1;
 
-    //   // return selected;
 
-    //   string selected = Console.ReadLine();
-    //   foreach (var item in data)
-    //   {
-
-    //   }
-
-    // }
-    private static int Capture<T>(List<T> data) where T : class
+    private static int Selected()
     {
+      int option = int.Parse(Console.ReadLine());
+      return option;
+    }
+    private static int Capture<T>(List<T> data) where T : class
+    {//return an index
       Log.Information("method: Capture()");
 
 

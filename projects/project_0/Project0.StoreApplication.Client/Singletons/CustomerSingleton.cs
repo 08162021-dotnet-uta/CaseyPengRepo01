@@ -13,7 +13,7 @@ namespace Project0.StoreApplication.Client.Singletons
     private static readonly CustomerRepository _customerRepository = new CustomerRepository();
 
     public List<Customer> Customers { get; private set; }
-    
+
     public static CustomerSingleton Instance
     {
       get
@@ -40,10 +40,14 @@ namespace Project0.StoreApplication.Client.Singletons
     /// 
     /// </summary>
     /// <param name="customer"></param>
+    /// 
+    /// customer MODEL defines Customer
     public void Add(Customer customer)
     {
       _customerRepository.Insert(customer);
       Customers = _customerRepository.Select();
     }
+
+
   }
 }
