@@ -55,7 +55,7 @@ using Serilog;
 //     //   Log.Information("mehtod outpoutstores");
 
 //     //   // var storeRepository = _storeRepository;
-  
+
 //     //   foreach (var store in _storeRepository.Stores)
 //     //   {
 //     //     Console.WriteLine(store);
@@ -70,7 +70,7 @@ using Serilog;
 
 
 //       // var storeRepository = _storeRepository;
-  
+
 //       foreach (var item in data)
 //       {
 //         Console.WriteLine(item);
@@ -105,7 +105,7 @@ using Serilog;
 //       var storeRepository = _storeRepository;
 //       // var products = new ProductRepository().Products;
 //       int selectedIdx = CaptureInput();
-      
+
 //    var selectedStore = _storeRepository.Stores[selectedIdx];
 //       Console.WriteLine("you have selected: " + " " + selectedStore.StoreName + "\n " + "Here are the products: ");
 
@@ -118,9 +118,9 @@ using Serilog;
 
 //       int selectedProductIdx = int.Parse(Console.ReadLine()) - 1;
 //       var selectedProduct = selectedStore.Products[selectedProductIdx];
-      
+
 //         Console.WriteLine("you selected "+ selectedProduct.ProductName  + ", and your total is $" + selectedProduct.ProductPrice );
-     
+
 
 //     }
 
@@ -140,7 +140,7 @@ namespace Project0.StoreApplication.Client
   {
     private static readonly CustomerSingleton _customerSingleton = CustomerSingleton.Instance;
     private static readonly StoreSingleton _storeSingleton = StoreSingleton.Instance;
-    private const string _logFilePath = @"/home/casey/excercise/CaseyPengRepo01/data/logs.txt";
+    private const string _logFilePath = @"/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/data/logs.txt";
 
     /// <summary>
     /// Defines the Main Method
@@ -161,69 +161,116 @@ namespace Project0.StoreApplication.Client
       Log.Information("method: Run()");
 
       Console.WriteLine("Are you a customer or a store ? 1 for custormer,  for store");
-       int input = int.Parse(Console.ReadLine());
-       if(input == 2){
-
-           if (_customerSingleton.Customers.Count == 0)
+      int input = int.Parse(Console.ReadLine());
+      if (input == 2)
       {
-        _customerSingleton.Add(new Customer());
+
+        if (_customerSingleton.Customers.Count != 0)
+        {
+          _customerSingleton.Add(new Customer());
+        }
+
+        // var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
+        // var store = _storeSingleton.Stores[Capture<Store>(_storeSingleton.Stores)];
+        // // stores
+        //Output<Store>(_storeSingleton.Stores);
+        // products
+        //Output<Product>(_productSingleton.Products);
+
+        // Console.WriteLine(customer);
       }
+      else if (input == 1)
+      {
+        if (_storeSingleton.Stores.Count == 0)
+        {
+          _storeSingleton.Add(new Store());
+        }
+        var stores = _storeSingleton.Stores;
+        Console.WriteLine("Here are the stores: ");
+        foreach (var store in stores)
+        {
+          Console.WriteLine(store);
+        }
+        Console.WriteLine("Select a store by name :");
+        var selectedStore = Console.ReadLine().ToLower();
 
-      // var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
-      // var store = _storeSingleton.Stores[Capture<Store>(_storeSingleton.Stores)];
-      // // stores
-      //Output<Store>(_storeSingleton.Stores);
-      // products
-      //Output<Product>(_productSingleton.Products);
+        foreach (var store in stores)
+        {
+          string storeName = store.Name.ToLower();
+          if (storeName.Contains(selectedStore))
+          {
+            Console.WriteLine($"Store selected :{store}");
+            foreach (var product in store.Products)
+            {
+              Console.WriteLine(product);
+            }
+            Console.WriteLine("Select a product to pucrchase");
+            var selectedProduct = Console.ReadLine().ToLower();
+            //Output<Product>(store.Products);
+          }
+          else
+          {
+            Console.WriteLine("Invalid input, Try agian ");
+          }
+        }
 
-      Console.WriteLine("customer");
-       }else if(input == 1){
-if(_storeSingleton.Stores.Count == 0)
-{
-  _storeSingleton.Add(new Store());
-}
-// var store = _storeSingleton.Stores[Capture<Store>(_storeSingleton.Stores)];
+        //--don't delet the below line, keep for reference
+        // var store = _storeSingleton.Stores[0];
+        // Console.WriteLine(store.Products[0]);
 
-// Console.WriteLine(store);
-var stores = _storeSingleton.Stores;
-foreach(var store in stores)
-{
-Console.WriteLine(store);
-}
 
+      }
     }
-    }
-    /// <summary>
+
+
+
     /// 
     /// </summary>
-    // private static void Output<T>(List<T> data) where T : class
-    // {
-    //   Log.Information($"method: Output<{typeof(T)}>()");
+    private static void Output<T>(List<T> data) where T : class
+    {
+      Log.Information($"method: Output<{typeof(T)}>()");
 
-    //   // var index = 0;
+      // var index = 0;
 
-    //   foreach (var item in data)
-    //   {
-    //     Console.WriteLine($" {item}");
-    //   }
-    // }
-  
+      foreach (var item in data)
+      {
+        Console.WriteLine($" {item}");
+      }
+    }
+
 
     /// <summary>
     /// 
     /// </summary>
     /// <returns></returns>
-    // private static int Capture<T>(List<T> data) where T : class
+    // private static bool Capture<T>(List<T> data) where T : class
     // {
     //   Log.Information("method: Capture()");
 
     //   Output<T>(data);
     //   Console.Write("make selection: ");
 
-    //   int selected = int.Parse(Console.ReadLine()) -1;
+    //   // int selected = int.Parse(Console.ReadLine()) - 1;
 
-    //   return selected ;
+    //   // return selected;
+
+    //   string selected = Console.ReadLine();
+    //   foreach (var item in data)
+    //   {
+
+    //   }
+
     // }
+    //  private static int Capture<T>(List<T> data) where T : class
+    //     {
+    //       Log.Information("method: Capture()");
+
+    //       Output<T>(data);
+    //       Console.Write("make selection: ");
+
+    //       int selected = int.Parse(Console.ReadLine()) - 1;
+
+    //       return selected;
+    //     }
   }
 }
-

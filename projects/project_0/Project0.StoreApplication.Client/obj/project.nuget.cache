@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NcjY5bz5ONMjfIG04yw05tXCRBwt6kEFJe8bCUU18YKF+/+9AaPgA2G0usEBcpFI6J8ykjeVanD2xz6QiKVheg==",
+  "dgSpecHash": "HRgpPSQ0tsr3L8kcEz2HNt98Y9wjs3t7qjcnGQiUO9l5RXNjN0vsdcpcMd4bHhdiN88MYUr2BElKUtpwXJKnsw==",
   "success": true,
-  "projectFilePath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj",
+  "projectFilePath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj",
   "expectedPackageFiles": [
     "/home/casey/.nuget/packages/serilog/2.10.0/serilog.2.10.0.nupkg.sha512",
     "/home/casey/.nuget/packages/serilog.sinks.console/4.0.0/serilog.sinks.console.4.0.0.nupkg.sha512",

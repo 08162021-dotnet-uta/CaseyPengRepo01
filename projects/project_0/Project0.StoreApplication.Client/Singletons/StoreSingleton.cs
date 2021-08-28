@@ -12,9 +12,20 @@ namespace Project0.StoreApplication.Client.Singletons
     private static StoreSingleton _StoreSingleton;
     private static readonly StoreRepository _StoreRepository = new StoreRepository();
 
+    //define a store based on the store defined in Model.CS
+    //// private List<Store> _stores;
+    // public List<Store> GetStores()
+    // {
+    //   return Stores;
+    // }
+
+    //     public void setStore(List<Store> stores)
+    //     {
+    // _stores = stores;
+    //     }
     public List<Store> Stores { get; private set; }
     public static StoreSingleton Instance
-    
+
     {
       get
       {
