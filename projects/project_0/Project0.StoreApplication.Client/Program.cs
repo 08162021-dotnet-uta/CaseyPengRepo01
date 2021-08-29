@@ -6,33 +6,6 @@ using Project0.StoreApplication.Domain.Models;
 using Project0.StoreApplication.Storage.Repositories;
 using Serilog;
 
-// namespace Project0.StoreApplication.Client
-// {
-// /// <summary>
-// /// define the program class 
-// /// </summary>
-
-//   internal class Program
-//   {
-// //8/23
-// // what happen  if you remove static from the below code 
-// //private static readonly StoreRepository _storeRepository= new StoreRepository();
-// //control StoreRepository.Instance to be instance
-
-// private static readonly StoreSingleton _storeRepository = StoreRepository.Instance;
-// //8/23end
-// private static readonly CustomerSingleton _customerSingleton = CustomerSingleton.Instance;
-// //TRY SINGLETON
-
-//     }
-
-//    public void Add(Customer customer )
-//    {
-
-//    }
-//   }
-
-// }
 namespace Project0.StoreApplication.Client
 {
   /// <summary>

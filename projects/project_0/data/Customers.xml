@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCustomer xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Customer>
+    <Name>First Customer</Name>
+    <Orders>
+      <Order>
+        <ProductName>First Order</ProductName>
+        <Total>300</Total>
+        <OrderId>2</OrderId>
+      </Order>
+    </Orders>
+  </Customer>
+</ArrayOfCustomer>

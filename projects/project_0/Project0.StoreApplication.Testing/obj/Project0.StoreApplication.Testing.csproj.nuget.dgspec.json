@@ -1,17 +1,90 @@
 {
   "format": 1,
   "restore": {
-    "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj": {}
+    "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj": {}
   },
   "projects": {
-    "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
+    "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
-        "projectName": "Project0.StoreApplication.Domain",
-        "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
+        "projectUniqueName": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj",
+        "projectName": "Project0.StoreApplication.Client",
+        "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj",
         "packagesPath": "/home/casey/.nuget/packages/",
-        "outputPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/obj/",
+        "outputPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/casey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
+                "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj"
+              },
+              "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj": {
+                "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "serilog.sinks.console": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "serilog.sinks.file": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
+        "projectName": "Project0.StoreApplication.Domain",
+        "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
+        "packagesPath": "/home/casey/.nuget/packages/",
+        "outputPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/casey/.nuget/NuGet/NuGet.Config"
@@ -56,14 +129,14 @@
         }
       }
     },
-    "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj": {
+    "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
+        "projectUniqueName": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
         "projectName": "Project0.StoreApplication.Storage",
-        "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
+        "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
         "packagesPath": "/home/casey/.nuget/packages/",
-        "outputPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/obj/",
+        "outputPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/casey/.nuget/NuGet/NuGet.Config"
@@ -78,8 +151,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
-                "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj"
+              "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
+                "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj"
               }
             }
           }
@@ -112,14 +185,14 @@
         }
       }
     },
-    "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj": {
+    "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj",
+        "projectUniqueName": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj",
         "projectName": "Project0.StoreApplication.Testing",
-        "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj",
+        "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj",
         "packagesPath": "/home/casey/.nuget/packages/",
-        "outputPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/obj/",
+        "outputPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/casey/.nuget/NuGet/NuGet.Config"
@@ -134,8 +207,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj": {
-                "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj"
+              "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj": {
+                "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Client/Project0.StoreApplication.Client.csproj"
+              },
+              "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
+                "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj"
+              },
+              "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj": {
+                "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj"
               }
             }
           }

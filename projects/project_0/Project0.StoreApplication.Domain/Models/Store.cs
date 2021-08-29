@@ -4,52 +4,23 @@ namespace Project0.StoreApplication.Domain.Models
 {
   public class Store
   {
-    public string StoreId{get;set;}
-    public string StoreName{get;set;}
-    public List<Product> Products{get;set;}
+
+    public string Name { get; set; }
+    public string Location { get; set; }
+    public List<Product> Products = new List<Product>();
+
+    public List<Order> Orders = new List<Order>();
+    // public string Location{get;set;}
+    public override string ToString()
+    {
+      return " StoreName: " + Name + " Location: " + Location;
+      //  + "products "+ Products;
+    }
     public Store()
     {
 
-    {  StoreId = "1";
-      StoreName = "Flower Store";
-      Products = new List<Product>()
-      {
-new Product {
-ProductName ="Daisy",
-ProductPrice ="2",
-ProductId= "1"
-
-}};
-   {  StoreId = "2";
-      StoreName = "Gift Store";
-      Products = new List<Product>()
-      {
-new Product {
-ProductName ="Greeting Card",
-ProductPrice ="2",
-ProductId= "1"
-
-},
-new Product {
-ProductName ="Music Box",
-ProductPrice ="300",
-ProductId = "2"
-
-
-}
-};
-      
-      
-      };
-
-
-      
-    }}
-    public override string ToString()
-    {
-       return  "StoreId:" + StoreId+ " StoreName: " + StoreName + Products;
     }
 
   }
-  
+
 }

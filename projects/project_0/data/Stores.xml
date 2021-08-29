@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Store>
+    <Products>
+      <Product>
+        <Name>万灵药</Name>
+        <Price>40 </Price>
+      </Product>
+    </Products>
+    <Orders>
+      <Order>
+        <CustomerName>xYZ</CustomerName>
+        <ProductName>First Order</ProductName>
+        <Total>300</Total>
+        <OrderId>1</OrderId>
+      </Order>
+    </Orders>
+    <Name>Panecea Store</Name>
+    <Location>X Ave, Uptobia</Location>
+  </Store>
+  <Store>
+    <Products>
+      <Product>
+        <Name>No Product</Name>
+        <Price>50 </Price>
+      </Product>
+    </Products>
+    <Orders>
+      <Order>
+        <CustomerName>First Customer</CustomerName>
+        <ProductName>First Order</ProductName>
+        <Total>300</Total>
+        <OrderId>2</OrderId>
+      </Order>
+    </Orders>
+    <Name>THE Store</Name>
+    <Location>1st, Accda</Location>
+  </Store>
+</ArrayOfStore>

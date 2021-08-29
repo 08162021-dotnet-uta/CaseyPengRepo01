@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
+      "projectUniqueName": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
       "projectName": "Project0.StoreApplication.Domain",
-      "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
+      "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj",
       "packagesPath": "/home/casey/.nuget/packages/",
-      "outputPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/obj/",
+      "outputPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/casey/.nuget/NuGet/NuGet.Config"

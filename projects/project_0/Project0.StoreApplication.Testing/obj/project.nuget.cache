@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DlJRiHy1Z2IUvli/VV7tSP07vN8ljlCVhR61yKUc5Wyd8TjYKYEqUkGNBgzsJ3g3hZry3W2eGl9ge1GwDls9Hw==",
+  "dgSpecHash": "J6KShLLzSTvjCVVOzGQkLMS6cVV+1WXfv6CVzTzxTANKnVHmw4FJREyX1IlikOrBGVc4FTMiXqhSe1VwDzWsyg==",
   "success": true,
-  "projectFilePath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj",
+  "projectFilePath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Testing/Project0.StoreApplication.Testing.csproj",
   "expectedPackageFiles": [
     "/home/casey/.nuget/packages/coverlet.collector/3.0.2/coverlet.collector.3.0.2.nupkg.sha512",
     "/home/casey/.nuget/packages/coverlet.msbuild/3.1.0/coverlet.msbuild.3.1.0.nupkg.sha512",
@@ -33,6 +33,9 @@
     "/home/casey/.nuget/packages/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/home/casey/.nuget/packages/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "/home/casey/.nuget/packages/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl/4.3.0/runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "/home/casey/.nuget/packages/serilog/2.10.0/serilog.2.10.0.nupkg.sha512",
+    "/home/casey/.nuget/packages/serilog.sinks.console/4.0.0/serilog.sinks.console.4.0.0.nupkg.sha512",
+    "/home/casey/.nuget/packages/serilog.sinks.file/5.0.0/serilog.sinks.file.5.0.0.nupkg.sha512",
     "/home/casey/.nuget/packages/system.appcontext/4.3.0/system.appcontext.4.3.0.nupkg.sha512",
     "/home/casey/.nuget/packages/system.buffers/4.3.0/system.buffers.4.3.0.nupkg.sha512",
     "/home/casey/.nuget/packages/system.collections/4.3.0/system.collections.4.3.0.nupkg.sha512",

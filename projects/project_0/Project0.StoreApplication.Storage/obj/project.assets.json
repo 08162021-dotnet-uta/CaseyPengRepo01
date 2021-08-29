@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
+      "projectUniqueName": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
       "projectName": "Project0.StoreApplication.Storage",
-      "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
+      "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/Project0.StoreApplication.Storage.csproj",
       "packagesPath": "/home/casey/.nuget/packages/",
-      "outputPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/obj/",
+      "outputPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Storage/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/casey/.nuget/NuGet/NuGet.Config"
@@ -51,8 +51,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
-              "projectPath": "/home/casey/exercise/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj"
+            "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj": {
+              "projectPath": "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Project0.StoreApplication.Domain.csproj"
             }
           }
         }

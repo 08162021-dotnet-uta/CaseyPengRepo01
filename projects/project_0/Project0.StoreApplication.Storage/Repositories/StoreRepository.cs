@@ -7,37 +7,38 @@ namespace Project0.StoreApplication.Storage.Repositories
 {
   public class StoreRepository : IRepository<Store>
   {
-private const string _path = @"/home/casey/exercise/CaseyPengRepo01/data/Stores.xml";
-private static readonly FileAdapter _fileAdapter = new FileAdapter();
+    private const string _path = @"/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/data/Stores.xml";
+    // @"/home/casey/exercise/CaseyPengRepo01/data/Stores.xml";
+    private static readonly FileAdapter _fileAdapter = new FileAdapter();
 
-public StoreRepository()
-{
-  // make sure the file exits 
-  if(_fileAdapter.ReadFromFile<Store>(_path) ==null)
-  {
-    _fileAdapter.WriteToFile<Store>(_path, new List<Store>());
+    public StoreRepository()
+    {
+      // make sure the file exits 
+      if (_fileAdapter.ReadFromFile<Store>(_path) == null)
+      {
+        _fileAdapter.WriteToFile<Store>(_path, new List<Store>()
+      );
+      }
+    }
+
+    public bool Delete()
+    {
+      throw new System.NotImplementedException();
+    }
+
+    public bool Insert(Store entry)
+    {
+      _fileAdapter.WriteToFile<Store>(_path, new List<Store> { entry });
+      return true;
+    }
+    public List<Store> Select()
+    {
+      return _fileAdapter.ReadFromFile<Store>(_path);
+    }
+
+    public Store Update()
+    {
+      throw new System.NotImplementedException();
+    }
   }
 }
-
-public bool Delete()
-{
-  throw new System.NotImplementedException();
-}
-
-public bool Insert(Store entry)
-{
-  _fileAdapter.WriteToFile<Store>(_path, new List<Store>{entry});
-  return true;
-}
-public List<Store> Select()
-{
-return _fileAdapter.ReadFromFile<Store>(_path);
-}
-
-public Store Update()
-{
-  throw new System.NotImplementedException();
-}
-  }
-}
-
