@@ -58,7 +58,7 @@ namespace Project0.StoreApplication.Client.Singletons
     /// <param name="Store"></param>
     public void Add(Store Store)
     {
-      Log.Information("Method: Add()");
+      Log.Information("Method: Add(Store)");
       _StoreRepository.Insert(Store);
       Stores = _StoreRepository.Select();
     }
