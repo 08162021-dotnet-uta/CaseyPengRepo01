@@ -1,14 +1,17 @@
 using System.Collections.Generic;
 using Project0.StoreApplication.Domain.Models;
 using Project0.StoreApplication.Storage.Repositories;
+using Serilog;
 //referenc to all the available stres
 namespace Project0.StoreApplication.Client.Singletons
 {
+
   /// <summary>
   /// 
   /// </summary>
   public class StoreSingleton
   {
+
     private static StoreSingleton _StoreSingleton;
     private static readonly StoreRepository _StoreRepository = new StoreRepository();
 
@@ -27,6 +30,7 @@ namespace Project0.StoreApplication.Client.Singletons
     public static StoreSingleton Instance
 
     {
+
       get
       {
         //check if a Store floder already exits in our data base, if not create one
@@ -44,6 +48,7 @@ namespace Project0.StoreApplication.Client.Singletons
     /// </summary>
     private StoreSingleton()
     {
+      Log.Information("Constructor: StoreSingleton()");
       Stores = _StoreRepository.Select();
     }
 
@@ -53,6 +58,7 @@ namespace Project0.StoreApplication.Client.Singletons
     /// <param name="Store"></param>
     public void Add(Store Store)
     {
+      Log.Information("Method: Add()");
       _StoreRepository.Insert(Store);
       Stores = _StoreRepository.Select();
     }

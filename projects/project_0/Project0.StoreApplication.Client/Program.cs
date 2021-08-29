@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Project0.StoreApplication.Client.Singletons;
 using Project0.StoreApplication.Domain.Abstracts;
 using Project0.StoreApplication.Domain.Models;
-using Project0.StoreApplication.Storage.Repositories;
 using Serilog;
 
 namespace Project0.StoreApplication.Client
@@ -178,6 +177,7 @@ namespace Project0.StoreApplication.Client
 
     private static int Selected()
     {
+      Log.Information("method: Selected()");
       int option = int.Parse(Console.ReadLine());
       return option;
     }
