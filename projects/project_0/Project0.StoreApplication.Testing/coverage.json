@@ -462,13 +462,13 @@
       "Project0.StoreApplication.Domain.Models.Customer": {
         "System.String Project0.StoreApplication.Domain.Models.Customer::get_Name()": {
           "Lines": {
-            "11": 2
+            "11": 6
           },
           "Branches": []
         },
         "System.Collections.Generic.List`1<Project0.StoreApplication.Domain.Models.Order> Project0.StoreApplication.Domain.Models.Customer::get_Orders()": {
           "Lines": {
-            "12": 0
+            "12": 10
           },
           "Branches": []
         },
@@ -482,10 +482,10 @@
         },
         "System.Void Project0.StoreApplication.Domain.Models.Customer::.ctor()": {
           "Lines": {
-            "15": 1,
-            "16": 1,
-            "17": 1,
-            "18": 1
+            "15": 3,
+            "16": 3,
+            "17": 3,
+            "18": 3
           },
           "Branches": []
         }
@@ -495,25 +495,25 @@
       "Project0.StoreApplication.Domain.Models.Order": {
         "System.String Project0.StoreApplication.Domain.Models.Order::get_CustomerName()": {
           "Lines": {
-            "8": 0
+            "8": 4
           },
           "Branches": []
         },
         "System.String Project0.StoreApplication.Domain.Models.Order::get_ProductName()": {
           "Lines": {
-            "9": 0
+            "9": 6
           },
           "Branches": []
         },
         "System.String Project0.StoreApplication.Domain.Models.Order::get_Total()": {
           "Lines": {
-            "10": 0
+            "10": 6
           },
           "Branches": []
         },
         "System.String Project0.StoreApplication.Domain.Models.Order::get_OrderId()": {
           "Lines": {
-            "12": 0
+            "12": 6
           },
           "Branches": []
         },
@@ -527,9 +527,9 @@
         },
         "System.Void Project0.StoreApplication.Domain.Models.Order::.ctor()": {
           "Lines": {
-            "18": 0,
-            "19": 0,
-            "21": 0
+            "18": 6,
+            "19": 6,
+            "21": 6
           },
           "Branches": []
         }
@@ -539,13 +539,13 @@
       "Project0.StoreApplication.Domain.Models.Product": {
         "System.String Project0.StoreApplication.Domain.Models.Product::get_Name()": {
           "Lines": {
-            "10": 3
+            "10": 7
           },
           "Branches": []
         },
         "System.String Project0.StoreApplication.Domain.Models.Product::get_Price()": {
           "Lines": {
-            "12": 2
+            "12": 6
           },
           "Branches": []
         },
@@ -559,9 +559,9 @@
         },
         "System.Void Project0.StoreApplication.Domain.Models.Product::.ctor()": {
           "Lines": {
-            "19": 2,
-            "20": 2,
-            "22": 2
+            "19": 6,
+            "20": 6,
+            "22": 6
           },
           "Branches": []
         }
@@ -571,13 +571,13 @@
       "Project0.StoreApplication.Domain.Models.Store": {
         "System.String Project0.StoreApplication.Domain.Models.Store::get_Name()": {
           "Lines": {
-            "8": 0
+            "8": 4
           },
           "Branches": []
         },
         "System.String Project0.StoreApplication.Domain.Models.Store::get_Location()": {
           "Lines": {
-            "9": 0
+            "9": 4
           },
           "Branches": []
         },
@@ -591,11 +591,11 @@
         },
         "System.Void Project0.StoreApplication.Domain.Models.Store::.ctor()": {
           "Lines": {
-            "10": 1,
-            "12": 1,
-            "19": 1,
-            "20": 1,
-            "22": 1
+            "10": 5,
+            "12": 5,
+            "19": 5,
+            "20": 5,
+            "22": 5
           },
           "Branches": []
         }
@@ -656,15 +656,15 @@
         },
         "System.Void Project0.StoreApplication.Storage.Repositories.CustomerRepository::.ctor()": {
           "Lines": {
-            "14": 0,
-            "15": 0,
-            "17": 0,
+            "14": 1,
+            "15": 1,
+            "17": 1,
             "18": 0,
             "19": 0,
             "20": 0,
             "21": 0,
             "22": 0,
-            "23": 0
+            "23": 1
           },
           "Branches": [
             {
@@ -681,13 +681,13 @@
               "EndOffset": 53,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             }
           ]
         },
         "System.Void Project0.StoreApplication.Storage.Repositories.CustomerRepository::.cctor()": {
           "Lines": {
-            "12": 0
+            "12": 1
           },
           "Branches": []
         }
@@ -728,14 +728,14 @@
         },
         "System.Void Project0.StoreApplication.Storage.Repositories.StoreRepository::.ctor()": {
           "Lines": {
-            "14": 0,
-            "15": 0,
-            "17": 0,
+            "14": 1,
+            "15": 1,
+            "17": 1,
             "18": 0,
             "19": 0,
             "20": 0,
             "21": 0,
-            "22": 0
+            "22": 1
           },
           "Branches": [
             {
@@ -752,13 +752,13 @@
               "EndOffset": 53,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 1
             }
           ]
         },
         "System.Void Project0.StoreApplication.Storage.Repositories.StoreRepository::.cctor()": {
           "Lines": {
-            "12": 0
+            "12": 1
           },
           "Branches": []
         }
@@ -768,15 +768,15 @@
       "Project0.StoreApplication.Storage.Adapters.FileAdapter": {
         "System.Collections.Generic.List`1<T> Project0.StoreApplication.Storage.Adapters.FileAdapter::ReadFromFile(System.String)": {
           "Lines": {
-            "18": 0,
-            "21": 0,
+            "18": 4,
+            "21": 4,
             "22": 0,
             "23": 0,
-            "25": 0,
-            "27": 0,
-            "29": 0,
-            "31": 0,
-            "33": 0
+            "25": 4,
+            "27": 4,
+            "29": 4,
+            "31": 4,
+            "33": 4
           },
           "Branches": [
             {
@@ -793,7 +793,7 @@
               "EndOffset": 20,
               "Path": 1,
               "Ordinal": 1,
-              "Hits": 0
+              "Hits": 4
             }
           ]
         },

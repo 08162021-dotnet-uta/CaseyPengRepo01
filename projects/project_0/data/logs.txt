@@ -173,3 +173,8 @@
 2021-08-28 21:18:32.446 -04:00 [INF] method: Output<Project0.StoreApplication.Domain.Models.Store>()
 2021-08-28 21:18:32.447 -04:00 [INF] method: Capture()
 2021-08-28 21:18:34.357 -04:00 [INF] method: Output<Project0.StoreApplication.Domain.Models.Product>()
+2021-08-29 17:57:28.685 -04:00 [INF] method: Run()
+2021-08-29 17:57:43.851 -04:00 [INF] method: Run()
+2021-08-29 17:57:47.750 -04:00 [INF] method: Output<Project0.StoreApplication.Domain.Models.Store>()
+2021-08-29 17:57:47.751 -04:00 [INF] method: Capture()
+2021-08-29 17:57:50.189 -04:00 [INF] method: Output<Project0.StoreApplication.Domain.Models.Product>()
