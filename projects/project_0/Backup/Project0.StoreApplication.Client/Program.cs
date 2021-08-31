@@ -196,7 +196,9 @@ namespace Project0.StoreApplication.Client
     {
       var def = new DemoEF();
 
-      def.SetCustomer(new Customer());
+      def.SetCustomer(new Customer(){
+        Name =" hello World"
+      });
 
       foreach (var item in def.GetCustomers())
       {

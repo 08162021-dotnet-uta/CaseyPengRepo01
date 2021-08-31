@@ -10,9 +10,9 @@ namespace Project0.StoreApplication.Storage
   {
     private readonly DataAdapter _da = new DataAdapter();
 
-    public List<Customer> GetCustomers()
+    public List<Product> GetProducts()
     {
-      return _da.Customers.FromSqlRaw("select * from Customer.Customer").ToList();
+      return _da.Customers.FromSqlRaw("select * from Store.Product").ToList();
 
       //_da.Orders.FromSqlRaw("select * from Store.Order where CustomerId = {0}", customers[0].CustomerId);
     }
