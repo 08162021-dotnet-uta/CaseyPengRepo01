@@ -90,46 +90,23 @@ namespace Project0.StoreApplication.Client
         int choice = Selected();
         if (choice == 1)
         {
-          if (_storeSingleton.Stores.Count == 0)
-          {
-            Console.WriteLine("No Store");
-          }
-          var stores = _storeSingleton.Stores;
-          Console.WriteLine("Here are the stores: ");
-          Output<Store>(stores);
-          var selectedStore = stores[Capture<Store>(stores)];
-          Console.WriteLine($"You selected store: {selectedStore.Name} with products :");
-          Output<Product>(selectedStore.Products);
-          Console.WriteLine("Selected a product to purchase:   ");
-          var selectedProduct = selectedStore.Products[Selected() - 1];
-          var customer = _customerSingleton.Customers[0];
-          var customers = _customerSingleton.Customers;
-          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out (Y)? C for canceling the order. Y/C");
-          string outcome = Console.ReadLine().ToLower();
+         
+  CustomerInterface();
+  Console.WriteLine("Do you want to see list of orders ? Y/N(exit Program)");
 
-          if (outcome == "y")
-          {
+ string yourChoice = Console.ReadLine().ToLower();
 
-            Console.WriteLine("You made a purchase!");
-          }
-          else if (outcome == "c")
-          {
-            Console.WriteLine("Your Purchase is canceled.");
-
-            System.Environment.Exit(0);
-          }
-
-
+ if(yourChoice=="y"){
+   CustomerOrderIn();
+ }
         }
         else if (choice == 2)
         {
-          var customers = _customerSingleton.Customers;
-          foreach (var customer in customers)
-          {
-            foreach (var order in customer.Orders)
-            {
-              Console.WriteLine(order);
-            }
+         
+          Console.WriteLine("Do you want to see list of stores ? Y/N(exit Program)");
+          string yourOpt = Console.ReadLine().ToLower();
+          if(yourOpt =="y"){
+CustomerInterface();
           }
         }
 
@@ -211,9 +188,53 @@ namespace Project0.StoreApplication.Client
             int idx = 1;
             foreach (var item in def.GetProducts())
             {
-                Console.WriteLine(idx + "-   ProductName: "+ item.Name + " Product Price: $" + item.Price);
+                Console.WriteLine(idx + "-   ProductName: "+ item.Name + " Product Price: $" + Decimal.Truncate(item.Price));
                 idx++;
             }
+        }
+
+        private static void CustomerOrderIn()
+        {
+           var customers = _customerSingleton.Customers;
+          foreach (var customer in customers)
+          {
+            foreach (var order in customer.Orders)
+            {
+              Console.WriteLine(order);
+            }
+          }
+        }
+
+        private static void CustomerInterface()
+        {
+           if (_storeSingleton.Stores.Count == 0)
+          {
+            Console.WriteLine("No Store");
+          }
+          var stores = _storeSingleton.Stores;
+          Console.WriteLine("Here are the stores: ");
+          Output<Store>(stores);
+          var selectedStore = stores[Capture<Store>(stores)];
+          Console.WriteLine($"You selected store: {selectedStore.Name} with products :");
+          Output<Product>(selectedStore.Products);
+          Console.WriteLine("Selected a product to purchase:   ");
+          var selectedProduct = selectedStore.Products[Selected() - 1];
+          var customer = _customerSingleton.Customers[0];
+          var customers = _customerSingleton.Customers;
+          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out (Y)? C for canceling the order. Y/C");
+          string outcome = Console.ReadLine().ToLower();
+
+          if (outcome == "y")
+          {
+
+            Console.WriteLine("You made a purchase!");
+          }
+          else if (outcome == "c")
+          {
+            Console.WriteLine("Your Purchase is canceled.");
+
+           
+          }
         }
 
 
