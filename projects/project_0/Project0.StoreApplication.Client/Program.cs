@@ -92,7 +92,7 @@ namespace Project0.StoreApplication.Client
         {
          
   CustomerInterface();
-  Console.WriteLine("Do you want to see list of orders ? Y/N(exit Program)");
+  Console.WriteLine("Do you want to see list of past orders ? Y/N(exit Program)");
 
  string yourChoice = Console.ReadLine().ToLower();
 
@@ -102,11 +102,12 @@ namespace Project0.StoreApplication.Client
         }
         else if (choice == 2)
         {
-         
+           CustomerOrderIn();
           Console.WriteLine("Do you want to see list of stores ? Y/N(exit Program)");
           string yourOpt = Console.ReadLine().ToLower();
           if(yourOpt =="y"){
 CustomerInterface();
+ Console.WriteLine("Do you want to see list of past orders ? Y/N(exit Program)");
           }
         }
 
@@ -233,7 +234,7 @@ CustomerInterface();
           {
             Console.WriteLine("Your Purchase is canceled.");
 
-           
+            System.Environment.Exit(0);
           }
         }
 
