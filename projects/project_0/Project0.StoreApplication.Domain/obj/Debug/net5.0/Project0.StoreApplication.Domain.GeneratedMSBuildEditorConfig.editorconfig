@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Project0.StoreApplication.Domain
-build_property.ProjectDir = /home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/
+build_property.ProjectDir = \\wsl$\Ubuntu\home\casey\makeacopy826\CaseyPengRepo01\projects\project_0\Project0.StoreApplication.Domain\
