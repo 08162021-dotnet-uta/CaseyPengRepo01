@@ -9,13 +9,13 @@ namespace Project0.StoreApplication.Testing
 {
   public class ModelTest
   {
-    [Fact]
-    public void TestCustomer()
-    {
-      var sut = new Customer();
-      var name = sut.Name;
-      Assert.NotNull(name);
-    }
+    // [Fact]
+    // public void TestCustomer()
+    // {
+    //   var sut = new Customer();
+    //   var name = sut.Name;
+    //   Assert.NotNull(name);
+    // }
 
     [Fact]
     public void TestStore()

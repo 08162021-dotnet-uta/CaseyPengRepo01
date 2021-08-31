@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Project0.StoreApplication.Client.Singletons;
-using Project0.StoreApplication.Domain.Abstracts;
+using Project0.StoreApplication.Storage;
 using Project0.StoreApplication.Domain.Models;
 using Serilog;
 
@@ -33,8 +33,11 @@ namespace Project0.StoreApplication.Client
     private static void Run()
     {
       Log.Information("method: Run()");
+      Console.WriteLine("get all the customers");
 
+      HelloSQL();
       Console.WriteLine("Are you a customer or a store ? c for custormer,  s for store");
+      System.Environment.Exit(0);
       string selected = Console.ReadLine().ToLower();
       if (selected == "s")
       {
@@ -102,7 +105,7 @@ namespace Project0.StoreApplication.Client
           var selectedProduct = selectedStore.Products[Selected() - 1];
           var customer = _customerSingleton.Customers[0];
           var customers = _customerSingleton.Customers;
-          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out (Y)? N for canceling the order ? Y/N");
+          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out (Y)? C for canceling the order. Y/C");
           string outcome = Console.ReadLine().ToLower();
 
           if (outcome == "y")
@@ -110,9 +113,10 @@ namespace Project0.StoreApplication.Client
 
             Console.WriteLine("You made a purchase!");
           }
-          else if (outcome == "n")
+          else if (outcome == "c")
           {
             Console.WriteLine("Your Purchase is canceled.");
+
             System.Environment.Exit(0);
           }
 
@@ -188,17 +192,17 @@ namespace Project0.StoreApplication.Client
 
 
 
-    //   private static void HelloSQL()
-    // {
-    //   var def = new DemoEF();
+    private static void HelloSQL()
+    {
+      var def = new DemoEF();
 
-    //     def.SetCustomer(new Customer());
+      def.SetCustomer(new Customer());
 
-    //   foreach (var item in def.GetCustomers())
-    //   {
-    //     Console.WriteLine(item);
-    //   }
-    // }
+      foreach (var item in def.GetCustomers())
+      {
+        Console.WriteLine(item.Name);
+      }
+    }
 
   }
 }

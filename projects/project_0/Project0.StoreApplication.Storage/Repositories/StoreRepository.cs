@@ -16,8 +16,7 @@ namespace Project0.StoreApplication.Storage.Repositories
       // make sure the file exits 
       if (_fileAdapter.ReadFromFile<Store>(_path) == null)
       {
-        _fileAdapter.WriteToFile<Store>(_path, new List<Store>()
-      );
+        _fileAdapter.WriteToFile<Store>(_path, new List<Store>());
       }
     }
 

@@ -4,41 +4,47 @@
       "Project0.StoreApplication.Client.Program": {
         "System.Void Project0.StoreApplication.Client.Program::Main(System.String[])": {
           "Lines": {
+            "24": 0,
             "25": 0,
-            "26": 0,
-            "28": 0,
-            "29": 0
+            "27": 0,
+            "28": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Client.Program::Run()": {
           "Lines": {
+            "34": 0,
             "35": 0,
-            "36": 0,
+            "37": 0,
             "38": 0,
             "39": 0,
             "40": 0,
-            "41": 0,
+            "42": 0,
             "43": 0,
             "44": 0,
             "45": 0,
-            "46": 0,
+            "47": 0,
             "48": 0,
-            "49": 0,
-            "50": 0,
             "51": 0,
             "52": 0,
             "53": 0,
-            "54": 0,
             "55": 0,
             "56": 0,
+            "57": 0,
             "58": 0,
             "59": 0,
             "60": 0,
-            "62": 0,
             "63": 0,
             "64": 0,
             "65": 0,
+            "66": 0,
+            "69": 0,
+            "71": 0,
+            "72": 0,
+            "73": 0,
+            "74": 0,
+            "75": 0,
+            "79": 0,
             "80": 0,
             "81": 0,
             "82": 0,
@@ -58,233 +64,234 @@
             "96": 0,
             "97": 0,
             "98": 0,
+            "99": 0,
             "101": 0,
             "102": 0,
-            "123": 0,
+            "105": 0,
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
             "124": 0,
-            "125": 0,
-            "126": 0,
-            "127": 0,
-            "128": 0,
-            "129": 0,
-            "130": 0,
-            "131": 0,
-            "132": 0,
-            "133": 0,
-            "134": 0,
-            "142": 0,
-            "143": 0
+            "125": 0
           },
           "Branches": [
             {
-              "Line": 40,
+              "Line": 39,
               "Offset": 35,
-              "EndOffset": 40,
+              "EndOffset": 37,
               "Path": 0,
               "Ordinal": 0,
               "Hits": 0
             },
             {
-              "Line": 43,
-              "Offset": 61,
-              "EndOffset": 63,
+              "Line": 42,
+              "Offset": 58,
+              "EndOffset": 60,
               "Path": 0,
               "Ordinal": 2,
               "Hits": 0
             },
             {
-              "Line": 43,
-              "Offset": 61,
-              "EndOffset": 81,
+              "Line": 42,
+              "Offset": 58,
+              "EndOffset": 78,
               "Path": 1,
               "Ordinal": 3,
               "Hits": 0
             },
             {
-              "Line": 50,
-              "Offset": 194,
-              "EndOffset": 114,
-              "Path": 1,
-              "Ordinal": 7,
-              "Hits": 0
-            },
-            {
-              "Line": 52,
-              "Offset": 167,
-              "EndOffset": 141,
-              "Path": 1,
-              "Ordinal": 5,
-              "Hits": 0
-            },
-            {
-              "Line": 52,
-              "Offset": 167,
-              "EndOffset": 169,
-              "Path": 0,
-              "Ordinal": 4,
-              "Hits": 0
-            },
-            {
-              "Line": 50,
-              "Offset": 194,
-              "EndOffset": 196,
-              "Path": 0,
-              "Ordinal": 6,
-              "Hits": 0
-            },
-            {
-              "Line": 40,
+              "Line": 39,
               "Offset": 35,
-              "EndOffset": 219,
+              "EndOffset": 122,
               "Path": 1,
               "Ordinal": 1,
               "Hits": 0
             },
             {
-              "Line": 59,
-              "Offset": 227,
-              "EndOffset": 232,
+              "Line": 52,
+              "Offset": 130,
+              "EndOffset": 135,
               "Path": 0,
-              "Ordinal": 8,
+              "Ordinal": 4,
               "Hits": 0
             },
             {
-              "Line": 62,
-              "Offset": 255,
-              "EndOffset": 257,
+              "Line": 55,
+              "Offset": 158,
+              "EndOffset": 160,
               "Path": 0,
-              "Ordinal": 10,
+              "Ordinal": 6,
               "Hits": 0
             },
             {
-              "Line": 62,
-              "Offset": 255,
-              "EndOffset": 275,
+              "Line": 55,
+              "Offset": 158,
+              "EndOffset": 178,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 288,
+              "EndOffset": 221,
               "Path": 1,
               "Ordinal": 11,
               "Hits": 0
             },
             {
-              "Line": 82,
-              "Offset": 302,
-              "EndOffset": 307,
+              "Line": 65,
+              "Offset": 254,
+              "EndOffset": 256,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 65,
+              "Offset": 254,
+              "EndOffset": 260,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 63,
+              "Offset": 288,
+              "EndOffset": 290,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 81,
+              "Offset": 334,
+              "EndOffset": 339,
               "Path": 0,
               "Ordinal": 12,
               "Hits": 0
             },
             {
-              "Line": 84,
-              "Offset": 330,
-              "EndOffset": 332,
+              "Line": 83,
+              "Offset": 362,
+              "EndOffset": 364,
               "Path": 0,
               "Ordinal": 14,
               "Hits": 0
             },
             {
-              "Line": 84,
-              "Offset": 330,
-              "EndOffset": 345,
+              "Line": 83,
+              "Offset": 362,
+              "EndOffset": 377,
               "Path": 1,
               "Ordinal": 15,
               "Hits": 0
             },
             {
-              "Line": 97,
-              "Offset": 514,
-              "EndOffset": 516,
+              "Line": 98,
+              "Offset": 576,
+              "EndOffset": 578,
               "Path": 0,
               "Ordinal": 16,
               "Hits": 0
             },
             {
-              "Line": 97,
-              "Offset": 514,
-              "EndOffset": 518,
+              "Line": 98,
+              "Offset": 576,
+              "EndOffset": 591,
               "Path": 1,
               "Ordinal": 17,
               "Hits": 0
             },
             {
-              "Line": 82,
-              "Offset": 302,
-              "EndOffset": 525,
+              "Line": 81,
+              "Offset": 334,
+              "EndOffset": 598,
               "Path": 1,
               "Ordinal": 13,
               "Hits": 0
             },
             {
-              "Line": 124,
-              "Offset": 534,
-              "EndOffset": 536,
+              "Line": 106,
+              "Offset": 607,
+              "EndOffset": 609,
               "Path": 0,
               "Ordinal": 18,
               "Hits": 0
             },
             {
-              "Line": 127,
-              "Offset": 641,
-              "EndOffset": 561,
+              "Line": 109,
+              "Offset": 714,
+              "EndOffset": 634,
               "Path": 1,
               "Ordinal": 23,
               "Hits": 0
             },
             {
-              "Line": 129,
-              "Offset": 614,
-              "EndOffset": 588,
+              "Line": 111,
+              "Offset": 687,
+              "EndOffset": 661,
               "Path": 1,
               "Ordinal": 21,
               "Hits": 0
             },
             {
-              "Line": 129,
-              "Offset": 614,
-              "EndOffset": 616,
+              "Line": 111,
+              "Offset": 687,
+              "EndOffset": 689,
               "Path": 0,
               "Ordinal": 20,
               "Hits": 0
             },
             {
-              "Line": 127,
-              "Offset": 641,
-              "EndOffset": 643,
+              "Line": 109,
+              "Offset": 714,
+              "EndOffset": 716,
               "Path": 0,
               "Ordinal": 22,
               "Hits": 0
             },
             {
-              "Line": 124,
-              "Offset": 534,
-              "EndOffset": 661,
+              "Line": 106,
+              "Offset": 607,
+              "EndOffset": 734,
               "Path": 1,
               "Ordinal": 19,
               "Hits": 0
             },
             {
-              "Line": 59,
-              "Offset": 227,
-              "EndOffset": 662,
+              "Line": 52,
+              "Offset": 130,
+              "EndOffset": 735,
               "Path": 1,
-              "Ordinal": 9,
+              "Ordinal": 5,
               "Hits": 0
             }
           ]
         },
         "System.Void Project0.StoreApplication.Client.Program::Output(System.Collections.Generic.List`1<T>)": {
           "Lines": {
-            "157": 0,
-            "158": 0,
-            "160": 0,
-            "162": 0,
-            "163": 0,
-            "164": 0,
-            "165": 0,
-            "166": 0,
-            "167": 0
+            "139": 0,
+            "140": 0,
+            "142": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0
           },
           "Branches": [
             {
-              "Line": 162,
+              "Line": 144,
               "Offset": 88,
               "EndOffset": 39,
               "Path": 1,
@@ -292,7 +299,7 @@
               "Hits": 0
             },
             {
-              "Line": 162,
+              "Line": 144,
               "Offset": 88,
               "EndOffset": 90,
               "Path": 0,
@@ -303,28 +310,29 @@
         },
         "System.Int32 Project0.StoreApplication.Client.Program::Selected()": {
           "Lines": {
-            "180": 0,
-            "181": 0,
-            "182": 0,
-            "183": 0
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0
           },
           "Branches": []
         },
         "System.Int32 Project0.StoreApplication.Client.Program::Capture(System.Collections.Generic.List`1<T>)": {
           "Lines": {
-            "185": 0,
-            "186": 0,
-            "189": 0,
-            "191": 0,
-            "193": 0,
-            "194": 0
+            "168": 0,
+            "169": 0,
+            "172": 0,
+            "174": 0,
+            "176": 0,
+            "177": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Client.Program::.cctor()": {
           "Lines": {
-            "16": 0,
-            "17": 0
+            "15": 0,
+            "16": 0
           },
           "Branches": []
         }
@@ -334,23 +342,23 @@
       "Project0.StoreApplication.Client.Singletons.CustomerSingleton": {
         "System.Collections.Generic.List`1<Project0.StoreApplication.Domain.Models.Customer> Project0.StoreApplication.Client.Singletons.CustomerSingleton::get_Customers()": {
           "Lines": {
-            "15": 0
+            "16": 0
           },
           "Branches": []
         },
         "Project0.StoreApplication.Client.Singletons.CustomerSingleton Project0.StoreApplication.Client.Singletons.CustomerSingleton::get_Instance()": {
           "Lines": {
-            "20": 0,
-            "22": 0,
+            "21": 0,
             "23": 0,
             "24": 0,
             "25": 0,
-            "27": 0,
-            "28": 0
+            "26": 0,
+            "28": 0,
+            "29": 0
           },
           "Branches": [
             {
-              "Line": 22,
+              "Line": 23,
               "Offset": 11,
               "EndOffset": 13,
               "Path": 0,
@@ -358,7 +366,7 @@
               "Hits": 0
             },
             {
-              "Line": 22,
+              "Line": 23,
               "Offset": 11,
               "EndOffset": 25,
               "Path": 1,
@@ -369,19 +377,21 @@
         },
         "System.Void Project0.StoreApplication.Client.Singletons.CustomerSingleton::Add(Project0.StoreApplication.Domain.Models.Customer)": {
           "Lines": {
-            "46": 0,
-            "47": 0,
             "48": 0,
-            "49": 0
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Client.Singletons.CustomerSingleton::.ctor()": {
           "Lines": {
-            "34": 0,
             "35": 0,
             "36": 0,
-            "37": 0
+            "37": 0,
+            "38": 0,
+            "39": 0
           },
           "Branches": []
         },
@@ -397,23 +407,23 @@
       "Project0.StoreApplication.Client.Singletons.StoreSingleton": {
         "System.Collections.Generic.List`1<Project0.StoreApplication.Domain.Models.Store> Project0.StoreApplication.Client.Singletons.StoreSingleton::get_Stores()": {
           "Lines": {
-            "26": 0
+            "29": 0
           },
           "Branches": []
         },
         "Project0.StoreApplication.Client.Singletons.StoreSingleton Project0.StoreApplication.Client.Singletons.StoreSingleton::get_Instance()": {
           "Lines": {
-            "31": 0,
-            "33": 0,
-            "34": 0,
             "35": 0,
-            "36": 0,
+            "37": 0,
             "38": 0,
-            "39": 0
+            "39": 0,
+            "40": 0,
+            "42": 0,
+            "43": 0
           },
           "Branches": [
             {
-              "Line": 33,
+              "Line": 37,
               "Offset": 11,
               "EndOffset": 13,
               "Path": 0,
@@ -421,7 +431,7 @@
               "Hits": 0
             },
             {
-              "Line": 33,
+              "Line": 37,
               "Offset": 11,
               "EndOffset": 25,
               "Path": 1,
@@ -432,25 +442,27 @@
         },
         "System.Void Project0.StoreApplication.Client.Singletons.StoreSingleton::Add(Project0.StoreApplication.Domain.Models.Store)": {
           "Lines": {
-            "55": 0,
-            "56": 0,
-            "57": 0,
-            "58": 0
+            "60": 0,
+            "61": 0,
+            "62": 0,
+            "63": 0,
+            "64": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Client.Singletons.StoreSingleton::.ctor()": {
           "Lines": {
-            "45": 0,
-            "46": 0,
-            "47": 0,
-            "48": 0
+            "49": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Client.Singletons.StoreSingleton::.cctor()": {
           "Lines": {
-            "13": 0
+            "16": 0
           },
           "Branches": []
         }
@@ -462,7 +474,7 @@
       "Project0.StoreApplication.Domain.Models.Customer": {
         "System.String Project0.StoreApplication.Domain.Models.Customer::get_Name()": {
           "Lines": {
-            "11": 6
+            "11": 2
           },
           "Branches": []
         },
@@ -482,10 +494,9 @@
         },
         "System.Void Project0.StoreApplication.Domain.Models.Customer::.ctor()": {
           "Lines": {
-            "15": 3,
-            "16": 3,
-            "17": 3,
-            "18": 3
+            "15": 2,
+            "16": 2,
+            "18": 2
           },
           "Branches": []
         }
@@ -530,6 +541,26 @@
             "18": 6,
             "19": 6,
             "21": 6
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/casey/makeacopy826/CaseyPengRepo01/projects/project_0/Project0.StoreApplication.Domain/Models/PanaceaStore.cs": {
+      "Project0.StoreApplication.Domain.Models.PanaceaStore": {
+        "System.Void Project0.StoreApplication.Domain.Models.PanaceaStore::.ctor()": {
+          "Lines": {
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0,
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "20": 0
           },
           "Branches": []
         }
@@ -589,6 +620,18 @@
           },
           "Branches": []
         },
+        "System.Void Project0.StoreApplication.Domain.Models.Store::AddOrder(System.String,System.String)": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0
+          },
+          "Branches": []
+        },
         "System.Void Project0.StoreApplication.Domain.Models.Store::.ctor()": {
           "Lines": {
             "10": 5,
@@ -625,50 +668,50 @@
       "Project0.StoreApplication.Storage.Repositories.CustomerRepository": {
         "System.Boolean Project0.StoreApplication.Storage.Repositories.CustomerRepository::Delete()": {
           "Lines": {
-            "26": 0,
-            "27": 0
+            "29": 0,
+            "30": 0
           },
           "Branches": []
         },
         "System.Boolean Project0.StoreApplication.Storage.Repositories.CustomerRepository::Insert(Project0.StoreApplication.Domain.Models.Customer)": {
           "Lines": {
-            "31": 0,
-            "32": 0,
-            "33": 0,
-            "34": 0
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0
           },
           "Branches": []
         },
         "System.Collections.Generic.List`1<Project0.StoreApplication.Domain.Models.Customer> Project0.StoreApplication.Storage.Repositories.CustomerRepository::Select()": {
           "Lines": {
-            "36": 0,
-            "37": 0,
-            "38": 0
+            "39": 0,
+            "40": 0,
+            "41": 0
           },
           "Branches": []
         },
         "Project0.StoreApplication.Domain.Models.Customer Project0.StoreApplication.Storage.Repositories.CustomerRepository::Update()": {
           "Lines": {
-            "41": 0,
-            "42": 0
+            "44": 0,
+            "45": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Storage.Repositories.CustomerRepository::.ctor()": {
           "Lines": {
-            "14": 1,
-            "15": 1,
             "17": 1,
-            "18": 0,
-            "19": 0,
-            "20": 0,
+            "18": 1,
+            "20": 1,
             "21": 0,
             "22": 0,
-            "23": 1
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 1
           },
           "Branches": [
             {
-              "Line": 17,
+              "Line": 20,
               "Offset": 28,
               "EndOffset": 30,
               "Path": 0,
@@ -676,7 +719,7 @@
               "Hits": 0
             },
             {
-              "Line": 17,
+              "Line": 20,
               "Offset": 28,
               "EndOffset": 53,
               "Path": 1,
@@ -687,7 +730,7 @@
         },
         "System.Void Project0.StoreApplication.Storage.Repositories.CustomerRepository::.cctor()": {
           "Lines": {
-            "12": 1
+            "15": 1
           },
           "Branches": []
         }
@@ -697,32 +740,32 @@
       "Project0.StoreApplication.Storage.Repositories.StoreRepository": {
         "System.Boolean Project0.StoreApplication.Storage.Repositories.StoreRepository::Delete()": {
           "Lines": {
-            "25": 0,
-            "26": 0
+            "24": 0,
+            "25": 0
           },
           "Branches": []
         },
         "System.Boolean Project0.StoreApplication.Storage.Repositories.StoreRepository::Insert(Project0.StoreApplication.Domain.Models.Store)": {
           "Lines": {
+            "29": 0,
             "30": 0,
             "31": 0,
-            "32": 0,
-            "33": 0
+            "32": 0
           },
           "Branches": []
         },
         "System.Collections.Generic.List`1<Project0.StoreApplication.Domain.Models.Store> Project0.StoreApplication.Storage.Repositories.StoreRepository::Select()": {
           "Lines": {
+            "34": 0,
             "35": 0,
-            "36": 0,
-            "37": 0
+            "36": 0
           },
           "Branches": []
         },
         "Project0.StoreApplication.Domain.Models.Store Project0.StoreApplication.Storage.Repositories.StoreRepository::Update()": {
           "Lines": {
-            "40": 0,
-            "41": 0
+            "39": 0,
+            "40": 0
           },
           "Branches": []
         },
@@ -734,8 +777,7 @@
             "18": 0,
             "19": 0,
             "20": 0,
-            "21": 0,
-            "22": 1
+            "21": 1
           },
           "Branches": [
             {

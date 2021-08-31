@@ -18,7 +18,7 @@ namespace Project0.StoreApplication.Storage.Adapters
     {  // file path
       // var path = @"/home/casey/exercise/CaseyPengRepo01/data/project_0.xml";
       // open file
-      if(!File.Exists(path))
+      if (!File.Exists(path))
       {
         return null;
       }
@@ -30,14 +30,14 @@ namespace Project0.StoreApplication.Storage.Adapters
       // return data
       return result;
 
-     }
+    }
     // public void UseReadFile()
     // {
     //   ReadFromFile<Store>("path:where you want to save ");
     // }
     //end of 8/23 
 
-    public void WriteToFile<T>(string path, List<T> data) where T : class 
+    public void WriteToFile<T>(string path, List<T> data) where T : class
     {
       //file path
       // string path = @"/home/casey/exercise/CaseyPengRepo01/data/project_0.xml";
@@ -48,7 +48,7 @@ namespace Project0.StoreApplication.Storage.Adapters
       //write to file 
       xml.Serialize(file, data);
       //close file 
-      // file.Close();
+      //file.Close();
     }
   }
 }

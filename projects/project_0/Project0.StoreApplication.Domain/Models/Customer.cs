@@ -9,12 +9,14 @@ namespace Project0.StoreApplication.Domain.Models
   public class Customer
   {
     public string Name { get; set; }
+
+    public byte CustomerId { get; set; }
     public List<Order> Orders { get; set; }
 
 
     public Customer()
     {
-      Name = "First Customer";
+
     }
     // public void AddOrder(Product product)
     // {
@@ -30,5 +32,9 @@ namespace Project0.StoreApplication.Domain.Models
     {
       return $"{Name} with {Orders.Count} Order so far";
     }
+    //     public void AddOder(List<Order> entry)
+    //     {
+    // Customer.Order.Add(entry)
+    //     }
   }
 }
