@@ -11,7 +11,7 @@ namespace Project0.StoreApplication.Domain.Models
       Products = new List<Product>(){
         new Product(){
           Name ="万灵药",
-          Price = "50"
+          Price = 50
         }
       };
 

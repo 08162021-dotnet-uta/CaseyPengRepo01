@@ -28,16 +28,14 @@ namespace Project0.StoreApplication.Client
     }
 
     /// <summary>
-    /// 
+    /// Start running the app
     /// </summary>
     private static void Run()
     {
       Log.Information("method: Run()");
-      Console.WriteLine("get all the customers");
 
-      HelloSQL();
       Console.WriteLine("Are you a customer or a store ? c for custormer,  s for store");
-      System.Environment.Exit(0);
+    
       string selected = Console.ReadLine().ToLower();
       if (selected == "s")
       {
@@ -61,7 +59,8 @@ namespace Project0.StoreApplication.Client
           Console.WriteLine(order);
         }
 
-
+      Console.WriteLine("Here are the inventories");
+      ListProducts();
       }
       else if (selected == "c")
       {
@@ -192,17 +191,31 @@ namespace Project0.StoreApplication.Client
 
 
 
-    private static void HelloSQL()
-    {
-      var def = new DemoEF();
+    // private static void HelloSQL()
+    // {
+    //   var def = new DemoEF();
 
-      def.SetCustomer(new Customer());
+    //   def.SetCustomer(new Customer());
 
-      foreach (var item in def.GetCustomers())
-      {
-        Console.WriteLine(item.Name);
-      }
-    }
+    //   foreach (var item in def.GetCustomers())
+    //   {
+    //     Console.WriteLine(item.Name);
+    //   }
+    // }
+        private static void ListProducts()
+        {
+            var def = new DemoEF();
+            // def.SetCustomer(new Customer(){
+            //   Name =" hello World"
+            // });
+            int idx = 1;
+            foreach (var item in def.GetProducts())
+            {
+                Console.WriteLine(idx + "-   ProductName: "+ item.Name + " Product Price: $" + item.Price);
+                idx++;
+            }
+        }
+
 
   }
 }

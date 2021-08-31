@@ -16,7 +16,7 @@ namespace Project0.StoreApplication.Domain.Models
 
     public Customer()
     {
-Name ="hello world"
+Name ="hello world";
     }
     // public void AddOrder(Product product)
     // {

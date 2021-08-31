@@ -1,19 +1,18 @@
 {
   "format": 1,
   "restore": {
-    "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj": {}
+    "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj": {}
   },
   "projects": {
-    "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj": {
+    "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj",
         "projectName": "Project0.StoreApplication.Client",
-        "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj",
+        "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\obj\\",
+        "outputPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\obj\\",
         "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -31,12 +30,13 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
-                "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj"
+              "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
+                "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj"
               },
-              "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj": {
-                "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj"
+              "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj": {
+                "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj"
               }
             }
           }
@@ -49,16 +49,8 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "(, )"
-            },
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "(, )"
-            },
             "serilog": {
               "target": "Package",
               "version": "[2.10.0, )"
@@ -81,20 +73,25 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
+    "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj",
         "projectName": "Project0.StoreApplication.Domain",
-        "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj",
+        "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\obj\\",
+        "outputPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -112,6 +109,7 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -123,17 +121,7 @@
       },
       "frameworks": {
         "net5.0": {
-          "dependencies": {
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "(, )"
-            },
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "(, )"
-            }
-          },
+          "targetAlias": "net5.0",
           "imports": [
             "net461",
             "net462",
@@ -143,20 +131,25 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj": {
+    "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj",
         "projectName": "Project0.StoreApplication.Storage",
-        "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj",
+        "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\obj\\",
+        "outputPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\obj\\",
         "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -174,9 +167,10 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
-                "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj"
+              "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
+                "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj"
               }
             }
           }
@@ -189,6 +183,7 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -199,15 +194,6 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.9, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "(, )"
-            },
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "(, )"
             }
           },
           "imports": [
@@ -219,20 +205,25 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj": {
+    "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj",
         "projectName": "Project0.StoreApplication.Testing",
-        "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj",
+        "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\Project0.StoreApplication.Testing.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\obj\\",
+        "outputPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Testing\\obj\\",
         "projectStyle": "PackageReference",
-        "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -250,15 +241,16 @@
         },
         "frameworks": {
           "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {
-              "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj": {
-                "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj"
+              "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj": {
+                "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Client\\Project0.StoreApplication.Client.csproj"
               },
-              "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
-                "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj"
+              "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj": {
+                "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Project0.StoreApplication.Domain.csproj"
               },
-              "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj": {
-                "projectPath": "\\\\wsl$\\Ubuntu\\home\\casey\\makeacopy826\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj"
+              "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj": {
+                "projectPath": "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Storage\\Project0.StoreApplication.Storage.csproj"
               }
             }
           }
@@ -271,19 +263,11 @@
       },
       "frameworks": {
         "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.9.4, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "(, )"
-            },
-            "NETStandard.Library": {
-              "target": "Package",
-              "version": "(, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -317,7 +301,13 @@
             "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
