@@ -12,6 +12,7 @@ namespace Project0.StoreApplication.Client.Singletons
     private static CustomerSingleton _customerSingleton;
     private static readonly CustomerRepository _customerRepository = new CustomerRepository();
 
+    //get customers 
     public List<Customer> Customers { get; private set; }
 
     public static CustomerSingleton Instance
@@ -49,7 +50,11 @@ namespace Project0.StoreApplication.Client.Singletons
       _customerRepository.Insert(customer);
       Customers = _customerRepository.Select();
     }
+    // public void AddOder(List<Customer> customers)
+    // {
 
+
+    // }
 
   }
 }

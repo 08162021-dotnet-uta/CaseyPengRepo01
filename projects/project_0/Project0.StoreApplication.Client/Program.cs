@@ -34,9 +34,9 @@ namespace Project0.StoreApplication.Client
     {
       Log.Information("method: Run()");
 
-      Console.WriteLine("Are you a customer or a store ? 1 for custormer,  2 for store");
-      int selected = Selected();
-      if (selected == 2)
+      Console.WriteLine("Are you a customer or a store ? c for custormer,  s for store");
+      string selected = Console.ReadLine().ToLower();
+      if (selected == "s")
       {
 
         if (_storeSingleton.Stores.Count == 0)
@@ -45,37 +45,45 @@ namespace Project0.StoreApplication.Client
         }
 
         var stores = _storeSingleton.Stores;
-        Console.WriteLine("Here are the orders: ");
-        foreach (var store in stores)
+
+
+        Console.WriteLine("Which Store are you:");
+        Output<Store>(stores);
+
+        var storeYouPicked = stores[Selected() - 1];
+        // var productsInStore = 
+        Console.WriteLine($" Here are the past sales:  ");
+        foreach (var order in storeYouPicked.Orders)
         {
-          foreach (var order in store.Orders)
-          {
-            Console.WriteLine(order);
-          }
+          Console.WriteLine(order);
         }
 
+
       }
-      else if (selected == 1)
+      else if (selected == "c")
       {
 
         if (_customerSingleton.Customers.Count == 0)
         {
           _customerSingleton.Add(new Customer());
         }
-        // Console.WriteLine("Enter your name to retrive info :");
-        // string customerName = Console.ReadLine().ToLower();
-        // List<Customer> currentCustomer = new List<Customer>();
-        // foreach (var customer in _customerSingleton.Customers)
-        // {
-        //   if (customer.Name.ToLower() == customerName)
-        //   {
-        //     currentCustomer.Add(customer);
-        //     Console.WriteLine($"{customer} + {currentCustomer[0]}");
-        //   }
-        // }
+        Console.WriteLine("Enter your name to retrive info :");
+        string customerName = Console.ReadLine().ToLower();
 
 
-        // var customer = _customerSingleton.Customers[Capture<Customer>(_customerSingleton.Customers)];
+        foreach (var customer in _customerSingleton.Customers)
+        {
+          if (customer.Name.ToLower() != customerName)
+          {
+
+            Console.WriteLine("Invalid Name");
+            System.Environment.Exit(0);
+
+          }
+        }
+
+
+
         Console.WriteLine("Do you want to see 1)List of Stores ? 2)Order History");
         int choice = Selected();
         if (choice == 1)
@@ -90,34 +98,24 @@ namespace Project0.StoreApplication.Client
           var selectedStore = stores[Capture<Store>(stores)];
           Console.WriteLine($"You selected store: {selectedStore.Name} with products :");
           Output<Product>(selectedStore.Products);
-          Console.WriteLine("Selected a poduct to purchase: ");
+          Console.WriteLine("Selected a product to purchase:   ");
           var selectedProduct = selectedStore.Products[Selected() - 1];
-          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out?  Y/N");
-          if (Console.ReadLine().ToLower() == "y")
+          var customer = _customerSingleton.Customers[0];
+          var customers = _customerSingleton.Customers;
+          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out (Y)? N for canceling the order ? Y/N");
+          string outcome = Console.ReadLine().ToLower();
+
+          if (outcome == "y")
           {
-            // customer.AddOrder(selectedProduct);
-            // Console.WriteLine(customer.Orders[0]);
+
+            Console.WriteLine("You made a purchase!");
           }
-;
-          // foreach (var store in stores)
-          // {
-          //   string storeName = store.Name.ToLower();
-          //   // if (storeName.Contains(selectedStore))
-          //   // {
-          //   //   Console.WriteLine($"Store selected :{store}");
-          //   //   foreach (var product in store.Products)
-          //   //   {
-          //   //     Console.WriteLine(product);
-          //   //   }
-          //   //   Console.WriteLine("Select a product to pucrchase");
-          //   //   var selectedProduct = Console.ReadLine().ToLower();
-          //   //   //Output<Product>(store.Products);
-          //   // }
-          //   // else
-          //   // {
-          //   //   Console.WriteLine("fail");
-          //   // }
-          // }
+          else if (outcome == "n")
+          {
+            Console.WriteLine("Your Purchase is canceled.");
+            System.Environment.Exit(0);
+          }
+
 
         }
         else if (choice == 2)
@@ -131,11 +129,6 @@ namespace Project0.StoreApplication.Client
             }
           }
         }
-
-
-        //--don't delet the below line, keep for reference
-        // var store = _storeSingleton.Stores[0];
-        // Console.WriteLine(store.Products[0]);
 
 
       }
@@ -186,12 +179,26 @@ namespace Project0.StoreApplication.Client
       Log.Information("method: Capture()");
 
 
-      Console.Write("make selection: ");
+      Console.Write("make a selection: ");
 
       int selected = int.Parse(Console.ReadLine()) - 1;
 
       return selected;
     }
-  }
 
+
+
+    //   private static void HelloSQL()
+    // {
+    //   var def = new DemoEF();
+
+    //     def.SetCustomer(new Customer());
+
+    //   foreach (var item in def.GetCustomers())
+    //   {
+    //     Console.WriteLine(item);
+    //   }
+    // }
+
+  }
 }
