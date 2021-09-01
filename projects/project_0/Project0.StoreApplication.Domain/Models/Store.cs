@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Xml.Serialization;
 namespace Project0.StoreApplication.Domain.Models
 {
-  [XmlInclude(typeof(PanaceaStore))]
+  // [XmlInclude(typeof(PanaceaStore))]
   public class Store
   {
     public int StoreId { get; set; }
@@ -21,14 +21,6 @@ namespace Project0.StoreApplication.Domain.Models
     public Store()
     {
 
-    }
-    public void AddOrder(string name, string total)
-    {
-      this.Orders.Add(new Order()
-      {
-        ProductName = name,
-        Total = total
-      });
     }
 
   }

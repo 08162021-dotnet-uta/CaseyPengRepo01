@@ -4,8 +4,8 @@
     <Name>FirstCustomer</Name>
     <Orders>
       <Order>
-        <ProductName>First Order</ProductName>
-        <Total>300</Total>
+        <ProductName>???</ProductName>
+        <Total>40</Total>
         <OrderId>2</OrderId>
       </Order>
     </Orders>

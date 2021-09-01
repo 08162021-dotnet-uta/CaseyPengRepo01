@@ -7,7 +7,7 @@ namespace Project0.StoreApplication.Domain.Models
   {
     public string CustomerName { get; set; }
     public string ProductName { get; set; }
-    public string Total { get; set; }
+    public decimal Total { get; set; }
 
     public int OrderId { get; set; }
     // public DateTime OrderDate { get; set; }

@@ -32,7 +32,7 @@ namespace Project0.StoreApplication.Storage.Repositories
 
     public bool Insert(Customer entry)
     {
-      _fileAdapter.WriteToFile<Customer>(_path, new List<Customer> { entry });
+      _fileAdapter.WriteToFile<Customer>(_path, new List<Customer> {  });
       return true;
     }
     public List<Customer> Select()

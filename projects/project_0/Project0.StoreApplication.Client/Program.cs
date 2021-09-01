@@ -70,7 +70,8 @@ namespace Project0.StoreApplication.Client
           _customerSingleton.Add(new Customer());
         }
         Console.WriteLine("Enter your name to retrive info :");
-        string customerName = Console.ReadLine().ToLower();
+        string customerEnterName = Console.ReadLine();
+        string customerName = customerEnterName.ToLower();
 
 
         foreach (var customer in _customerSingleton.Customers)
@@ -106,7 +107,34 @@ namespace Project0.StoreApplication.Client
           Console.WriteLine("Do you want to see list of stores ? Y/N(exit Program)");
           string yourOpt = Console.ReadLine().ToLower();
           if(yourOpt =="y"){
-CustomerInterface();
+if (_storeSingleton.Stores.Count == 0)
+          {
+            Console.WriteLine("No Store");
+          }
+          var stores = _storeSingleton.Stores;
+          Console.WriteLine("Here are the stores: ");
+          Output<Store>(stores);
+          var selectedStore = stores[Capture<Store>(stores)];
+          Console.WriteLine($"You selected store: {selectedStore.Name} with products :");
+          Output<Product>(selectedStore.Products);
+          Console.WriteLine("Selected a product to purchase:   ");
+          var selectedProduct = selectedStore.Products[Selected() - 1];
+          var customer = _customerSingleton.Customers[0];
+          var customers = _customerSingleton.Customers;
+          Console.WriteLine($"you selected : {selectedProduct} and \n the total is $ {selectedProduct.Price}.  \n Do you want to check out (Y)? C for canceling the order. Y/C");
+          string outcome = Console.ReadLine().ToLower();
+          // decimal totalPrice = Decimal.Parse(selectedProduct.Price);
+          if (outcome == "y")
+          {
+            Console.WriteLine("You made a purchase!");
+          }
+          else if (outcome == "c")
+          {
+            Console.WriteLine("Your Purchase is canceled.");
+
+            System.Environment.Exit(0);
+          }
+
  Console.WriteLine("Do you want to see list of past orders ? Y/N(exit Program)");
           }
         }
