@@ -43,22 +43,22 @@
             "71": 0,
             "72": 0,
             "73": 0,
-            "76": 0,
+            "74": 0,
             "77": 0,
             "78": 0,
             "79": 0,
-            "81": 0,
+            "80": 0,
             "82": 0,
-            "84": 0,
+            "83": 0,
             "85": 0,
-            "89": 0,
+            "86": 0,
             "90": 0,
             "91": 0,
             "92": 0,
-            "94": 0,
+            "93": 0,
             "95": 0,
-            "97": 0,
-            "99": 0,
+            "96": 0,
+            "98": 0,
             "100": 0,
             "101": 0,
             "102": 0,
@@ -72,8 +72,33 @@
             "110": 0,
             "111": 0,
             "112": 0,
+            "113": 0,
+            "114": 0,
             "115": 0,
-            "116": 0
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "135": 0,
+            "136": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "143": 0,
+            "144": 0
           },
           "Branches": [
             {
@@ -149,97 +174,145 @@
               "Hits": 0
             },
             {
-              "Line": 76,
-              "Offset": 402,
-              "EndOffset": 339,
+              "Line": 77,
+              "Offset": 406,
+              "EndOffset": 343,
               "Path": 1,
               "Ordinal": 13,
               "Hits": 0
             },
             {
-              "Line": 78,
-              "Offset": 372,
-              "EndOffset": 374,
+              "Line": 79,
+              "Offset": 376,
+              "EndOffset": 378,
               "Path": 0,
               "Ordinal": 10,
               "Hits": 0
             },
             {
-              "Line": 78,
-              "Offset": 372,
-              "EndOffset": 394,
+              "Line": 79,
+              "Offset": 376,
+              "EndOffset": 398,
               "Path": 1,
               "Ordinal": 11,
               "Hits": 0
             },
             {
-              "Line": 76,
-              "Offset": 402,
-              "EndOffset": 404,
+              "Line": 77,
+              "Offset": 406,
+              "EndOffset": 408,
               "Path": 0,
               "Ordinal": 12,
               "Hits": 0
             },
             {
-              "Line": 91,
-              "Offset": 448,
-              "EndOffset": 450,
+              "Line": 92,
+              "Offset": 452,
+              "EndOffset": 454,
               "Path": 0,
               "Ordinal": 14,
               "Hits": 0
             },
             {
-              "Line": 99,
-              "Offset": 496,
-              "EndOffset": 498,
+              "Line": 100,
+              "Offset": 500,
+              "EndOffset": 502,
               "Path": 0,
               "Ordinal": 16,
               "Hits": 0
             },
             {
-              "Line": 99,
-              "Offset": 496,
-              "EndOffset": 506,
+              "Line": 100,
+              "Offset": 500,
+              "EndOffset": 510,
               "Path": 1,
               "Ordinal": 17,
               "Hits": 0
             },
             {
-              "Line": 91,
-              "Offset": 448,
-              "EndOffset": 509,
+              "Line": 92,
+              "Offset": 452,
+              "EndOffset": 516,
               "Path": 1,
               "Ordinal": 15,
               "Hits": 0
             },
             {
-              "Line": 103,
-              "Offset": 518,
-              "EndOffset": 520,
+              "Line": 104,
+              "Offset": 525,
+              "EndOffset": 530,
               "Path": 0,
               "Ordinal": 18,
               "Hits": 0
             },
             {
-              "Line": 108,
-              "Offset": 566,
-              "EndOffset": 568,
+              "Line": 109,
+              "Offset": 576,
+              "EndOffset": 581,
               "Path": 0,
               "Ordinal": 20,
               "Hits": 0
             },
             {
-              "Line": 108,
-              "Offset": 566,
-              "EndOffset": 587,
+              "Line": 110,
+              "Offset": 604,
+              "EndOffset": 606,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 110,
+              "Offset": 604,
+              "EndOffset": 619,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 827,
+              "EndOffset": 829,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 127,
+              "Offset": 827,
+              "EndOffset": 844,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 860,
+              "EndOffset": 862,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 131,
+              "Offset": 860,
+              "EndOffset": 882,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 576,
+              "EndOffset": 894,
               "Path": 1,
               "Ordinal": 21,
               "Hits": 0
             },
             {
-              "Line": 103,
-              "Offset": 518,
-              "EndOffset": 588,
+              "Line": 104,
+              "Offset": 525,
+              "EndOffset": 895,
               "Path": 1,
               "Ordinal": 19,
               "Hits": 0
@@ -247,7 +320,7 @@
             {
               "Line": 65,
               "Offset": 248,
-              "EndOffset": 589,
+              "EndOffset": 896,
               "Path": 1,
               "Ordinal": 7,
               "Hits": 0
@@ -256,19 +329,19 @@
         },
         "System.Void Project0.StoreApplication.Client.Program::Output(System.Collections.Generic.List`1<T>)": {
           "Lines": {
-            "130": 0,
-            "131": 0,
-            "133": 0,
-            "135": 0,
-            "136": 0,
-            "137": 0,
-            "138": 0,
-            "139": 0,
-            "140": 0
+            "158": 0,
+            "159": 0,
+            "161": 0,
+            "163": 0,
+            "164": 0,
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0
           },
           "Branches": [
             {
-              "Line": 135,
+              "Line": 163,
               "Offset": 88,
               "EndOffset": 39,
               "Path": 1,
@@ -276,7 +349,7 @@
               "Hits": 0
             },
             {
-              "Line": 135,
+              "Line": 163,
               "Offset": 88,
               "EndOffset": 90,
               "Path": 0,
@@ -287,40 +360,40 @@
         },
         "System.Int32 Project0.StoreApplication.Client.Program::Selected()": {
           "Lines": {
-            "153": 0,
-            "154": 0,
-            "155": 0,
-            "156": 0,
-            "157": 0
+            "181": 0,
+            "182": 0,
+            "183": 0,
+            "184": 0,
+            "185": 0
           },
           "Branches": []
         },
         "System.Int32 Project0.StoreApplication.Client.Program::Capture(System.Collections.Generic.List`1<T>)": {
           "Lines": {
-            "159": 0,
-            "160": 0,
-            "163": 0,
-            "165": 0,
-            "167": 0,
-            "168": 0
+            "187": 0,
+            "188": 0,
+            "191": 0,
+            "193": 0,
+            "195": 0,
+            "196": 0
           },
           "Branches": []
         },
         "System.Void Project0.StoreApplication.Client.Program::ListProducts()": {
           "Lines": {
-            "184": 0,
-            "185": 0,
-            "189": 0,
-            "190": 0,
-            "191": 0,
-            "192": 0,
-            "193": 0,
-            "194": 0,
-            "195": 0
+            "212": 0,
+            "213": 0,
+            "217": 0,
+            "218": 0,
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0,
+            "223": 0
           },
           "Branches": [
             {
-              "Line": 190,
+              "Line": 218,
               "Offset": 120,
               "EndOffset": 24,
               "Path": 1,
@@ -328,7 +401,7 @@
               "Hits": 0
             },
             {
-              "Line": 190,
+              "Line": 218,
               "Offset": 120,
               "EndOffset": 122,
               "Path": 0,
@@ -339,20 +412,20 @@
         },
         "System.Void Project0.StoreApplication.Client.Program::CustomerOrderIn()": {
           "Lines": {
-            "198": 0,
-            "199": 0,
-            "200": 0,
-            "201": 0,
-            "202": 0,
-            "203": 0,
-            "204": 0,
-            "205": 0,
-            "206": 0,
-            "207": 0
+            "226": 0,
+            "227": 0,
+            "228": 0,
+            "229": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0,
+            "235": 0
           },
           "Branches": [
             {
-              "Line": 200,
+              "Line": 228,
               "Offset": 99,
               "EndOffset": 22,
               "Path": 1,
@@ -360,7 +433,7 @@
               "Hits": 0
             },
             {
-              "Line": 202,
+              "Line": 230,
               "Offset": 72,
               "EndOffset": 46,
               "Path": 1,
@@ -368,7 +441,7 @@
               "Hits": 0
             },
             {
-              "Line": 202,
+              "Line": 230,
               "Offset": 72,
               "EndOffset": 74,
               "Path": 0,
@@ -376,7 +449,7 @@
               "Hits": 0
             },
             {
-              "Line": 200,
+              "Line": 228,
               "Offset": 99,
               "EndOffset": 101,
               "Path": 0,
@@ -387,37 +460,37 @@
         },
         "System.Void Project0.StoreApplication.Client.Program::CustomerInterface()": {
           "Lines": {
-            "210": 0,
-            "211": 0,
-            "212": 0,
-            "213": 0,
-            "214": 0,
-            "215": 0,
-            "216": 0,
-            "217": 0,
-            "218": 0,
-            "219": 0,
-            "220": 0,
-            "221": 0,
-            "222": 0,
-            "223": 0,
-            "224": 0,
-            "225": 0,
-            "226": 0,
-            "228": 0,
-            "229": 0,
-            "231": 0,
-            "232": 0,
-            "233": 0,
-            "234": 0,
-            "235": 0,
-            "237": 0,
             "238": 0,
-            "239": 0
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0,
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0,
+            "247": 0,
+            "248": 0,
+            "249": 0,
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "256": 0,
+            "257": 0,
+            "259": 0,
+            "260": 0,
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0
           },
           "Branches": [
             {
-              "Line": 211,
+              "Line": 239,
               "Offset": 23,
               "EndOffset": 25,
               "Path": 0,
@@ -425,7 +498,7 @@
               "Hits": 0
             },
             {
-              "Line": 211,
+              "Line": 239,
               "Offset": 23,
               "EndOffset": 38,
               "Path": 1,
@@ -433,7 +506,7 @@
               "Hits": 0
             },
             {
-              "Line": 228,
+              "Line": 256,
               "Offset": 234,
               "EndOffset": 236,
               "Path": 0,
@@ -441,7 +514,7 @@
               "Hits": 0
             },
             {
-              "Line": 228,
+              "Line": 256,
               "Offset": 234,
               "EndOffset": 251,
               "Path": 1,
@@ -449,7 +522,7 @@
               "Hits": 0
             },
             {
-              "Line": 233,
+              "Line": 261,
               "Offset": 267,
               "EndOffset": 269,
               "Path": 0,
@@ -457,7 +530,7 @@
               "Hits": 0
             },
             {
-              "Line": 233,
+              "Line": 261,
               "Offset": 267,
               "EndOffset": 289,
               "Path": 1,
@@ -611,7 +684,7 @@
       "Project0.StoreApplication.Domain.Models.Customer": {
         "System.String Project0.StoreApplication.Domain.Models.Customer::get_Name()": {
           "Lines": {
-            "11": 2
+            "11": 1
           },
           "Branches": []
         },
@@ -639,7 +712,6 @@
           "Lines": {
             "17": 1,
             "18": 1,
-            "19": 1,
             "20": 1
           },
           "Branches": []
@@ -660,7 +732,7 @@
           },
           "Branches": []
         },
-        "System.String Project0.StoreApplication.Domain.Models.Order::get_Total()": {
+        "System.Decimal Project0.StoreApplication.Domain.Models.Order::get_Total()": {
           "Lines": {
             "10": 3
           },
@@ -685,26 +757,6 @@
             "19": 3,
             "20": 3,
             "22": 3
-          },
-          "Branches": []
-        }
-      }
-    },
-    "C:\\Users\\13478\\desktop\\project_0\\CaseyPengRepo01\\projects\\project_0\\Project0.StoreApplication.Domain\\Models\\PanaceaStore.cs": {
-      "Project0.StoreApplication.Domain.Models.PanaceaStore": {
-        "System.Void Project0.StoreApplication.Domain.Models.PanaceaStore::.ctor()": {
-          "Lines": {
-            "7": 0,
-            "8": 0,
-            "9": 0,
-            "10": 0,
-            "11": 0,
-            "12": 0,
-            "13": 0,
-            "14": 0,
-            "15": 0,
-            "16": 0,
-            "20": 0
           },
           "Branches": []
         }
@@ -773,18 +825,6 @@
             "17": 0,
             "18": 0,
             "20": 0
-          },
-          "Branches": []
-        },
-        "System.Void Project0.StoreApplication.Domain.Models.Store::AddOrder(System.String,System.String)": {
-          "Lines": {
-            "26": 0,
-            "27": 0,
-            "28": 0,
-            "29": 0,
-            "30": 0,
-            "31": 0,
-            "32": 0
           },
           "Branches": []
         },
