@@ -13,9 +13,11 @@ namespace Project0.StoreApplication.Storage
 
  public List<Product> GetProducts()
         {
+          //Creates a LINQ query based on a raw SQL query.
+          //LINQ:Language-Integrated Query  , techonologies based on the
+          // integraion of query capabilities directly into the c# language
             return _da.Products.FromSqlRaw("select * from Store.Product").ToList();
 
-            //_da.Orders.FromSqlRaw("select * from Store.Order where CustomerId = {0}", customers[0].CustomerId);
         }
 
     public void SetCustomer(Customer customer)

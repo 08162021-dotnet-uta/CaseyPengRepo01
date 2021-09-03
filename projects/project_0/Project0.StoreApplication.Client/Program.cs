@@ -20,6 +20,7 @@ namespace Project0.StoreApplication.Client
     /// Defines the Main Method
     /// </summary>
     /// <param name="args"></param>
+    /// 
     private static void Main(string[] args)
     {
       Log.Logger = new LoggerConfiguration().WriteTo.File(_logFilePath).CreateLogger();
