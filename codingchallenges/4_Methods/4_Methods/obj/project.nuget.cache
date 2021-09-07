@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "IIcyhfMEcpuu95+QQiZFRgw2OzGY8A53/IJ//wv1+pd/aRGGjk2D5nsMUENrI6kvZv9B1KQS8n/Kem3ggmVNFw==",
+  "success": true,
+  "projectFilePath": "/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/4_Methods/4_Methods/4_Methods.csproj",
+  "expectedPackageFiles": [
+    "/home/casey/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "/home/casey/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/home/casey/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.18/microsoft.netcore.app.host.linux-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}

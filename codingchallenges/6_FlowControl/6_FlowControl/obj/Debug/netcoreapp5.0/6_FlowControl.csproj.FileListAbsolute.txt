@@ -1,0 +1,16 @@
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/6_FlowControl
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/6_FlowControl.deps.json
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/6_FlowControl.runtimeconfig.json
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/6_FlowControl.runtimeconfig.dev.json
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/6_FlowControl.dll
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/ref/6_FlowControl.dll
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/bin/Debug/netcoreapp5.0/6_FlowControl.pdb
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.csproj.AssemblyReference.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.GeneratedMSBuildEditorConfig.editorconfig
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.AssemblyInfoInputs.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.AssemblyInfo.cs
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.csproj.CoreCompileInputs.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.dll
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/ref/6_FlowControl.dll
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.pdb
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/6_FlowControl/6_FlowControl/obj/Debug/netcoreapp5.0/6_FlowControl.genruntimeconfig.cache

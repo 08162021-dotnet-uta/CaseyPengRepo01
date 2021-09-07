@@ -1,0 +1,5 @@
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/4_Methods/4_Methods/obj/Debug/netcoreapp3.1/4_Methods.csproj.AssemblyReference.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/4_Methods/4_Methods/obj/Debug/netcoreapp3.1/4_Methods.GeneratedMSBuildEditorConfig.editorconfig
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/4_Methods/4_Methods/obj/Debug/netcoreapp3.1/4_Methods.AssemblyInfoInputs.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/4_Methods/4_Methods/obj/Debug/netcoreapp3.1/4_Methods.AssemblyInfo.cs
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/4_Methods/4_Methods/obj/Debug/netcoreapp3.1/4_Methods.csproj.CoreCompileInputs.cache

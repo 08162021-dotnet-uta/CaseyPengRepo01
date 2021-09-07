@@ -1,0 +1,14 @@
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.csproj.AssemblyReference.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.GeneratedMSBuildEditorConfig.editorconfig
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.AssemblyInfoInputs.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.AssemblyInfo.cs
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.csproj.CoreCompileInputs.cache
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/bin/Debug/netcoreapp3.1/Strings
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/bin/Debug/netcoreapp3.1/Strings.deps.json
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/bin/Debug/netcoreapp3.1/Strings.runtimeconfig.json
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/bin/Debug/netcoreapp3.1/Strings.runtimeconfig.dev.json
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/bin/Debug/netcoreapp3.1/Strings.dll
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/bin/Debug/netcoreapp3.1/Strings.pdb
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.dll
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.pdb
+/home/casey/codingchallenge/08162021-batch-repo/codingchallenges/1_Strings/1_Strings/Strings/obj/Debug/netcoreapp3.1/Strings.genruntimeconfig.cache
