@@ -5,6 +5,8 @@ namespace StoreApplication
         public int CustomerId { get; set; }
         private string _firstName;
         private string _lastName;
+        public string CustPassword { get;set;}
+ 
         public string FirstName{
             get{
        return this._firstName;
@@ -30,7 +32,7 @@ namespace StoreApplication
            }
            
             }
-        public string Password{get;set;}
+       
 
         
 

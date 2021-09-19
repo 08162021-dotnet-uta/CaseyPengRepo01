@@ -479,6 +479,39 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Serilog/2.10.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.dll": {}
+        }
+      },
+      "Serilog.Sinks.Console/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net5.0/Serilog.Sinks.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.Console.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/5.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.10.0"
+        },
+        "compile": {
+          "lib/net5.0/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Serilog.Sinks.File.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1523,6 +1556,11 @@
       "ModelsLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Serilog": "2.10.0",
+          "Serilog.Sinks.Console": "4.0.0",
+          "Serilog.Sinks.File": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/ModelsLayer.dll": {}
         },
@@ -1537,6 +1575,9 @@
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
           "ModelsLayer": "1.0.0",
+          "Serilog": "2.10.0",
+          "Serilog.Sinks.Console": "4.0.0",
+          "Serilog.Sinks.File": "5.0.0",
           "StoreApplicationDBContext": "1.0.0"
         },
         "compile": {
@@ -1552,7 +1593,10 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "5.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.9",
-          "ModelsLayer": "1.0.0"
+          "ModelsLayer": "1.0.0",
+          "Serilog": "2.10.0",
+          "Serilog.Sinks.Console": "4.0.0",
+          "Serilog.Sinks.File": "5.0.0"
         },
         "compile": {
           "bin/placeholder/StoreApplicationDBContext.dll": {}
@@ -2321,6 +2365,77 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Serilog/2.10.0": {
+      "sha512": "+QX0hmf37a0/OZLxM3wL7V6/ADvC1XihXN4Kq/p6d8lCPfgkRdiuhbWlMaFjR9Av0dy5F0+MBeDmDdRZN/YwQA==",
+      "type": "package",
+      "path": "serilog/2.10.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "lib/netstandard2.1/Serilog.dll",
+        "lib/netstandard2.1/Serilog.xml",
+        "serilog.2.10.0.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    },
+    "Serilog.Sinks.Console/4.0.0": {
+      "sha512": "yJQit9sTJ4xGLKgCujqDJsaGqBNJwGB/H898z+xYlMG06twy4//6LLnSrsmpduZxcHIG4im7cv+JmXLzXz2EkQ==",
+      "type": "package",
+      "path": "serilog.sinks.console/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.Sinks.Console.dll",
+        "lib/net45/Serilog.Sinks.Console.xml",
+        "lib/net5.0/Serilog.Sinks.Console.dll",
+        "lib/net5.0/Serilog.Sinks.Console.xml",
+        "lib/netstandard1.3/Serilog.Sinks.Console.dll",
+        "lib/netstandard1.3/Serilog.Sinks.Console.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Console.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Console.xml",
+        "serilog.sinks.console.4.0.0.nupkg.sha512",
+        "serilog.sinks.console.nuspec"
+      ]
+    },
+    "Serilog.Sinks.File/5.0.0": {
+      "sha512": "uwV5hdhWPwUH1szhO8PJpFiahqXmzPzJT/sOijH/kFgUx+cyoDTMM8MHD0adw9+Iem6itoibbUXHYslzXsLEAg==",
+      "type": "package",
+      "path": "serilog.sinks.file/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/Serilog.Sinks.File.dll",
+        "lib/net45/Serilog.Sinks.File.pdb",
+        "lib/net45/Serilog.Sinks.File.xml",
+        "lib/net5.0/Serilog.Sinks.File.dll",
+        "lib/net5.0/Serilog.Sinks.File.pdb",
+        "lib/net5.0/Serilog.Sinks.File.xml",
+        "lib/netstandard1.3/Serilog.Sinks.File.dll",
+        "lib/netstandard1.3/Serilog.Sinks.File.pdb",
+        "lib/netstandard1.3/Serilog.Sinks.File.xml",
+        "lib/netstandard2.0/Serilog.Sinks.File.dll",
+        "lib/netstandard2.0/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.0/Serilog.Sinks.File.xml",
+        "lib/netstandard2.1/Serilog.Sinks.File.dll",
+        "lib/netstandard2.1/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.1/Serilog.Sinks.File.xml",
+        "serilog.sinks.file.5.0.0.nupkg.sha512",
+        "serilog.sinks.file.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -5851,6 +5966,9 @@
       "Microsoft.EntityFrameworkCore.Design >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.9",
       "ModelsLayer >= 1.0.0",
+      "Serilog >= 2.10.0",
+      "Serilog.Sinks.Console >= 4.0.0",
+      "Serilog.Sinks.File >= 5.0.0",
       "SotreApplicationBusinessLayer >= 1.0.0"
     ]
   },
@@ -5861,11 +5979,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplication\\StoreApplication.csproj",
+      "projectUniqueName": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplication\\StoreApplication.csproj",
       "projectName": "StoreApplication",
-      "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplication\\StoreApplication.csproj",
+      "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplication\\StoreApplication.csproj",
       "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplication\\obj\\",
+      "outputPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5886,11 +6004,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
-              "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj"
+            "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
+              "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj"
             },
-            "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj": {
-              "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj"
+            "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj"
             }
           }
         }
@@ -5920,6 +6038,18 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.9, )"
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[2.10.0, )"
+          },
+          "Serilog.Sinks.Console": {
+            "target": "Package",
+            "version": "[4.0.0, )"
+          },
+          "Serilog.Sinks.File": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [

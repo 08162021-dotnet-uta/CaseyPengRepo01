@@ -5,6 +5,7 @@ namespace StoreApplication
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
         public decimal ProductPrice{get;set;  }
+        public int ProductId { get; set; }
         
         
         

@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace SotreApplicationBusinessLayer
 {
-   
-   public class StoreRepository : IRpository<Store>
+
+    public class StoreRepository : IRpository<Store>
     {
- private AstoreApplicationDBContext context;
+        private AstoreApplicationDBContext context;
         public StoreRepository()
         {
             context = new AstoreApplicationDBContext();
@@ -38,7 +38,7 @@ namespace SotreApplicationBusinessLayer
         {
             throw new System.NotImplementedException();
         }
-        public bool Update(int storeId, List<ViewModelOrderProduct> orderProducts)
+        public bool Update(int storeId, IEnumerable<OrderProduct> orderProducts)
         {
             /*
             Dictionary<int, int> prodQuant = new Dictionary<int, int>();
@@ -54,15 +54,16 @@ namespace SotreApplicationBusinessLayer
             */
             foreach (var orderProd in orderProducts)
             {
+                Console.WriteLine($"here is in placing order {orderProd}");
                 int numAffected = context.Database.ExecuteSqlRaw(@$"
                 UPDATE i 
-                    SET Quantity -= {orderProd.Quantity}
+                 SET Quantity = Quantity - {orderProd.Quantity}
                 FROM Store.Inventory i
                 WHERE StoreId = {storeId} 
                 AND ProductId = {orderProd.ProductId}
-                AND Quantity > {orderProd.Quantity}");
+                AND Quantity >= {orderProd.Quantity}");
 
-                if(numAffected == 0)
+                if (numAffected == 0)
                     throw new Exception($"The inventory for productId {orderProd.ProductId}  is not enough to create a order.");
             }
 
@@ -73,16 +74,30 @@ namespace SotreApplicationBusinessLayer
             throw new System.NotImplementedException();
         }
 
-       public List<ViewModelInventory> GetInventory(int storeId)
-        {//entity 
-            // context.Set<Stores>() = context.Stores
+        public List<ViewModelInventory> GetInventory(int storeId)
+        {//entity  need to fix?!09/12 using entityframwork inventory instead ...
+         // context.Set<Stores>() = context.Stores
+
             return context.Set<ViewModelInventory>().FromSqlRaw(@$"
                 select Store.Product.ProductId , Store.Product.ProductName, Store.Product.ProductDescription,Store.Product.ProductPrice, Store.Inventory.Quantity  from Store.Product
                 left join  Store.Inventory
                     on Store.Product.ProductId = Store.Inventory.ProductId
                 where Store.Inventory.StoreId = {storeId} ")
                 .ToList();
+            //        return context.Set<Inventory>().FromSqlRaw(@$"
+            //select p.*,i.Quantity,i.InventoryId,i.StoreId from Store.Product p
+            //       left join  Store.Inventory i 
+            //             on p.ProductId = i.ProductId
+            //       where i.StoreId = {storeId} ")
+            //       .ToList();
 
+        }
+
+        public List<Order> GetOrders(int storeId)
+        {
+            var orders = context.Orders.FromSqlRaw(@$"SELECT * FROM Store.[Order] o
+        where o.StoreId = {storeId}").Include(o => o.OrderProducts).Include(o=> o.Customer).ToList();
+            return orders;
         }
     }
 }

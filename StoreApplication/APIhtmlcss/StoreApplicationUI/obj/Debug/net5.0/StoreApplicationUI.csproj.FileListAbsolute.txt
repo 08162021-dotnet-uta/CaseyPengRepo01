@@ -69,3 +69,6 @@ C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\
 C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\net5.0\ModelsLayer.pdb
 C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\net5.0\SotreApplicationBusinessLayer.pdb
 C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\net5.0\StoreApplicationDBContext.pdb
+C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\net5.0\Serilog.dll
+C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\13478\Desktop\StoreApplication\APIhtmlcss\StoreApplicationUI\bin\Debug\net5.0\Serilog.Sinks.File.dll

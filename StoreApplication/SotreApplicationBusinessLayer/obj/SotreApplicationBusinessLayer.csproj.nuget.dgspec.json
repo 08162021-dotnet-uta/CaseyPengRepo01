@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj": {}
+    "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
+    "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj",
         "projectName": "ModelsLayer",
-        "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj",
+        "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\obj\\",
+        "outputPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -43,6 +43,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj": {
+    "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj",
         "projectName": "SotreApplicationBusinessLayer",
-        "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj",
+        "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\SotreApplicationBusinessLayer.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\SotreApplicationBusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\SotreApplicationBusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,11 +104,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
-                "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj"
+              "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
+                "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj"
               },
-              "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDBContext\\StoreApplicationDBContext.csproj": {
-                "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDBContext\\StoreApplicationDBContext.csproj"
+              "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDBContext\\StoreApplicationDBContext.csproj": {
+                "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDBContext\\StoreApplicationDBContext.csproj"
               }
             }
           }
@@ -116,6 +130,18 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -137,14 +163,14 @@
         }
       }
     },
-    "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj": {
+    "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj",
+        "projectUniqueName": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj",
         "projectName": "StoreApplicationDBContext",
-        "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj",
+        "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj",
         "packagesPath": "C:\\Users\\13478\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDbContext\\obj\\",
+        "outputPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDbContext\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -165,8 +191,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
-                "projectPath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj"
+              "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj": {
+                "projectPath": "C:\\Users\\13478\\Desktop\\StoreApplication\\ModelsLayer\\ModelsLayer.csproj"
               }
             }
           }
@@ -200,6 +226,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.10.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

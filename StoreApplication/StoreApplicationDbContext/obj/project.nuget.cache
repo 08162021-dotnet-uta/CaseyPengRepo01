@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jBovq+8d6/kBs+wHEGq+rlxZqoLndHSDIpTPCDViOkt7IZtsB5Sf9ielXXegBQbeoDJ9r4+j80PM8qQ+o9Maog==",
+  "dgSpecHash": "t9v4uZKoPi/17glaZwfUW93PYBcIDbC+jd97aS9T5HnoSOai5hV41cBCi1BAxFpeSVFg9mxU5KnRSsyVVxwHBA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj",
+  "projectFilePath": "C:\\Users\\13478\\Desktop\\StoreApplication\\StoreApplicationDbContext\\StoreApplicationDBContext.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\13478\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -36,6 +36,9 @@
     "C:\\Users\\13478\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\13478\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\13478\\.nuget\\packages\\serilog.sinks.console\\4.0.0\\serilog.sinks.console.4.0.0.nupkg.sha512",
+    "C:\\Users\\13478\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

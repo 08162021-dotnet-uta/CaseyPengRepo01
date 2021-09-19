@@ -37,7 +37,7 @@ namespace StoreApplicationDbContext.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
-
+//add an entity model 
            modelBuilder.Entity<ViewModelInventory>().HasNoKey();
 
             modelBuilder.Entity<Customer>(entity =>
@@ -51,6 +51,13 @@ namespace StoreApplicationDbContext.Models
                 entity.Property(e => e.LastName)
                     .IsRequired()
                     .HasMaxLength(100);
+
+                   entity.Property(e => e.CustPassword)
+                    .HasMaxLength(100);
+                   
+                   
+          
+          
             });
 
             modelBuilder.Entity<Inventory>(entity =>

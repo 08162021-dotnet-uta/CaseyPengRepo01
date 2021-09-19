@@ -35,9 +35,11 @@ ProductId int not null identity(1,1),
 ProductName nvarchar(100) not null,
 ProductDescription nvarchar(300) not null,
 ProductPrice money not null,
+CONSTRAINT UK_ProductName Unique(ProductName),
 Primary Key (ProductId),
 );
-
+alter table Store.Product add CONSTRAINT UK_ProductName Unique(ProductName);
+select ProductName,ProductId from Store.Product where ProductName ='Isolation';
   alter table Store.Product add ProductPrice money not null;
 alter table Store.Product drop column ProductPrict;
 alter table Store.[Order] drop column OrderDate;

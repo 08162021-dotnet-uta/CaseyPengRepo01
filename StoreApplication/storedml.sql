@@ -1,15 +1,17 @@
 use AstoreApplicationDB;
 GO
 
-select * from Customer.Customer;
-
-
+alter table Customer.Customer add CustPassword nvarchar(100);
 
 insert into Customer.Customer
 VALUES
 ('Summer','Holiday'),
 ('Winter','Break'),
 ('Spring','Lee');
+
+insert into Customer.Customer
+VALUES
+('ken','abba','1234')
 
 insert into Store.Store
 values
@@ -29,8 +31,17 @@ values
 ('Not an Isolation','Just Not an Isolation',70.00),
 ('Good Product','Good for you ',4.00),
 ('Normal People','Does not make you normal',20);
-select * from Store.Product left join  Store.Inventory on Store.Product.ProductId = Store.Inventory.ProductId
-inner join Store.Store on Store.Store.StoreId = Store.Inventory.StoreId;
+
+select * from Store.Product
+left join  Store.Inventory
+	on Store.Product.ProductId = Store.Inventory.ProductId
+	where Store.Inventory.StoreId=1;
+
+	select Store.Product.ProductId , Store.Product.ProductName, Store.Product.ProductDescription,Store.Product.ProductPrice, Store.Inventory.Quantity  from Store.Product
+left join  Store.Inventory
+	on Store.Product.ProductId = Store.Inventory.ProductId
+	where Store.Inventory.StoreId=1;
+
 
 select*from Store.Inventory;
 insert into Store.[Order]
@@ -41,7 +52,10 @@ values
 (2,1,GETDATE());
 
 SELECT * FROM Store.[Order];
+alter table Store.[Order] add OrderTotal Money null;
 delete from Store.Inventory where Store.Inventory.InventoryId =1;
+
+SELECT * FROM Store.Product;
 
 
 INSERT INTO STORE.OrderProduct
@@ -74,3 +88,25 @@ values
 (3,6,100);
 
 select * from store.Product;
+select * from store.Inventory;
+SELECT * FROM sTORE.OrderProduct;
+select *from Store.[Order];
+
+select p.*,i.Quantity,i.InventoryId,i.StoreId from Store.Product p
+           left join  Store.Inventory i 
+                 on p.ProductId = i.ProductId
+           where i.StoreId = 1;
+
+SELECT * FROM Store.[Order] o WHERE o.CustomerId = 1;
+update Store.[Order] set OrderTotal = 50 where OrderTotal IS NULL;
+
+SELECT * FROM Customer.Customer;
+Select * From Store.OrderProduct
+select * from Store.Inventory where StoreId =1;
+select * from Store.Inventory where StoreId =2;
+select * from Store.Inventory where StoreId =3;
+select * from Store.[Order] where StoreId =1;
+select * from Store.[Order] where StoreId =2;
+select * from Store.[Order] where StoreId =3;
+
+

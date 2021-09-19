@@ -25,5 +25,18 @@ namespace StoreApplicationUI.Controllers
         {
             return StoreSingleton.Instance.Stores;
         }
+
+        //get inventory base on store id 
+
+
+        //get store orders based on 
+
+        //get inventory based by Store id  stores/id
+        [HttpGet("{id}")]
+        public List<ViewModelInventory> GetStoreInventory(int id)
+        {
+            return StoreSingleton.Instance.GetInventory(id);
+        }
+
     }
 }

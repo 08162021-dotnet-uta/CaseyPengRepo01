@@ -16,7 +16,7 @@ namespace StoreApplicationDbContext.Models
         public int CustomerId { get; set; }
         public int StoreId { get; set; }
         public DateTime OrderDate { get; set; }
-        public double OrderTotal { get; set; }
+        public decimal OrderTotal { get; set; }
 
         public virtual Customer Customer { get; set; }
         public virtual Store Store { get; set; }

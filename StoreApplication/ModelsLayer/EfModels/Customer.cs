@@ -15,6 +15,7 @@ namespace StoreApplicationDbContext.Models
         public int CustomerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string CustPassword { get;set;}
 
         public virtual ICollection<Order> Orders { get; set; }
     }

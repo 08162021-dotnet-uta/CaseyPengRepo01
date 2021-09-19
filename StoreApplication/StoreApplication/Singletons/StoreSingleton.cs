@@ -7,6 +7,7 @@ using SotreApplicationBusinessLayer;
 using System.Linq;
 using ModelsLayer;
 using StoreApplicationDbContext.Models;
+using Serilog;
 
 namespace StoreApplication.Singletons
 {
@@ -15,6 +16,7 @@ namespace StoreApplication.Singletons
         private static StoreSingleton _storeSingleton;
         private static readonly StoreRepository _storeRepo = new StoreRepository();
         private static readonly OrderRepository _orderRepo = new OrderRepository();
+        private const string _logFilePath = @"/Users/13478/desktop/StoreApplication/log/log.txt";
         public static StoreSingleton Instance
         {
             get
@@ -30,8 +32,9 @@ namespace StoreApplication.Singletons
         {
             get
             {
-                //select from linq:projects eachele of a sequence into a new form
+                //select from linq:projects 
                 //here convert each entity to a list element
+               // Select() method, which allows you to take the data from the data source and shape it into something else.
                 return _storeRepo.Load().Select(s=>
                 new ViewModelStore()
                 {
@@ -51,19 +54,44 @@ namespace StoreApplication.Singletons
         {
             return _storeRepo.GetInventory(storeId);
         }
+
+        //place order
         public bool PlaceOrder(ViewModelOrder order)
         {
-            _storeRepo.Update(order.OrderId, order.OrderProducts);
+            Log.Information("PlaceOrder STORESINGLE TON");
             Order newOrder = new Order {
                 CustomerId = order.CustomerId,
-                OrderDate = order.OrderDate,
+                OrderDate = DateTime.Now,
                 OrderTotal = order.OrderTotal,
                 StoreId = order.StoreId,
                 OrderProducts = order.OrderProducts.Select(o =>
                     new OrderProduct { ProductId = o.ProductId, Quantity = o.Quantity }).ToList()
             };
             _orderRepo.Insert(newOrder);
+               _storeRepo.Update(newOrder.StoreId, newOrder.OrderProducts);
             return true;
+        }
+        //load store orders with customer info
+
+        public List<ViewModelOrder> StoreOrders(int storId)
+        {
+            Log.Information("StoreOrders by Id");
+            return _storeRepo.GetOrders(storId)
+                .Select(so => new ViewModelOrder()
+                {
+                    CustomerId = so.CustomerId,
+                    FirstName = so.Customer.FirstName,
+                    LastName = so.Customer.LastName,
+                    OrderId = so.OrderId,
+                    OrderDate = so.OrderDate,
+                    OrderTotal = so.OrderTotal,
+                    OrderProducts = so.OrderProducts
+                        .Select(op => new ViewModelOrderProduct()
+                        {
+                            ProductId = op.ProductId,
+                            Quantity = op.Quantity
+                        }).ToList()
+                }).ToList();
         }
 
 

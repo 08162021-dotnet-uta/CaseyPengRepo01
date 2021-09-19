@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kha42PPvFeS1SXvUM8CFMRa6PsuRxntyZp1K3AbdAd26NJnVaLaEX2kHmVF3oii04uB9M991/XCCXmd6WFqjow==",
+  "dgSpecHash": "T/YaACxA14guCztNycg1mFe9LL3qgQESp2nhgpa5h4hih+TS92D2yG1vK+rY5sTuiThl9u9aZzBJfFlIb9PxhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\13478\\Desktop\\CaseyPengRepo01\\StoreApplication\\APIhtmlcss\\StoreApplicationUI\\StoreApplicationUI.csproj",
+  "projectFilePath": "C:\\Users\\13478\\Desktop\\StoreApplication\\APIhtmlcss\\StoreApplicationUI\\StoreApplicationUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\13478\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
@@ -35,6 +35,9 @@
     "C:\\Users\\13478\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\13478\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\13478\\.nuget\\packages\\serilog.sinks.console\\4.0.0\\serilog.sinks.console.4.0.0.nupkg.sha512",
+    "C:\\Users\\13478\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "C:\\Users\\13478\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",

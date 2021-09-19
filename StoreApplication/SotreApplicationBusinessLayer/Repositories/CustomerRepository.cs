@@ -25,7 +25,12 @@ namespace SotreApplicationBusinessLayer
         }
         public bool Insert(Customer entry )
         {
-            throw new System.NotImplementedException();
+            //add customer
+            //  _da.Database.ExecuteSqlRaw("insert into Customer.Customer(Name) values ({0})", customer.Name);
+         
+            context.Customers.Add(entry);
+            context.SaveChanges();
+            return true;
         }
 
         public List<Customer> Load()
@@ -37,6 +42,19 @@ namespace SotreApplicationBusinessLayer
             throw new System.NotImplementedException();
         }
 
+        public Customer Search(string fn, string pw)
+        {
+            return context.Customers.FromSqlRaw($"SELECT * FROM Customer.Customer WHERE Customer.FirstName = '{fn}' and Customer.CustPassword = '{pw}'").FirstOrDefault();
+        }
+        //get customer by id
+        public Customer getById(int id)
+        {
+            return context.Customers.FromSqlRaw($"SELECT * FROM Customer.Customer WHERE Customer.CustomerId ={id}").FirstOrDefault();
+        }
+        public List<Order> ListOrder(int custId)
+        {
+            return context.Orders.FromSqlRaw($"SELECT * FROM Store.[Order] o WHERE o.CustomerId = {custId} ").ToList();
+        }
 
     }
 }

@@ -9,7 +9,7 @@ namespace StoreApplication
 {
     public class ViewModelInventory:ViewModelProduct
     {
-
+        //pn,pd,pp,pi
         public int Quantity { get; set; }
 
     }
