@@ -1,0 +1,15 @@
+{
+  "name": "typescriptdemo",
+  "version": "1.0.1",
+  "description": "a demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "tsc":"tsc"
+  },
+  "author": "casey",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
