@@ -39,4 +39,4 @@ To-do list:
 
 ## License
 
-This project uses the following license: [<MIT>](<link>).
+MIT License
