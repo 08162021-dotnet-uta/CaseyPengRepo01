@@ -16,9 +16,7 @@ List of features
 * User can see list of stores and their location and pick one to see all the available inventories
 * User can add available inventories of a store, add them to cart and checkout 
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+
 
 ## Getting Started
    
