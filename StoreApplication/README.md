@@ -6,15 +6,15 @@ Here goes your awesome project description!
 
 ## Technologies Used
 
-* C# Programming, ADO.NET Entity Framework, Testing Process , HTML5, CSS3, Defect Logging, Microsoft SQL Server, SQL, XML, JavaScript, HTML, CSS
+* C# Programming, ADO.NET Entity Framework, XUnit, HTML5, CSS3, Defect Logging, Microsoft SQL Server, SQL, XML, JavaScript, HTML, CSS
 
 
 ## Features
 
-Functiona
-* Awesome feature 1
-* Awesome feature 2
-* Awesome feature 3
+List of features
+* User can log in or sign up if they don't have an account
+* User can see list of stores and their location and pick one to see all the available inventories
+* User can add available inventories of a store, add them to cart and checkout 
 
 To-do list:
 * Wow improvement to be done 1
